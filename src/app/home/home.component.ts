@@ -12,7 +12,6 @@ const WGo = require('wgo');
   styleUrls: ['./home.component.scss']
 })
 
-
 export class HomeComponent implements OnInit {
 
   quote: string;
@@ -42,10 +41,57 @@ export class HomeComponent implements OnInit {
     this.drawBoard();
   }
 
+  private drawCoordinates = () => {
+    return {
+      // draw on grid layer
+      grid: {
+        draw: function (args: any, board: any) {
+          let ch, t, xright, xleft, ytop, ybottom;
+
+          this.fillStyle = "rgba(0,0,0,0.7)";
+          this.textBaseline = "middle";
+          this.textAlign = "center";
+          this.font = board.stoneRadius + "px " + (board.font || "");
+
+          xright = board.getX(-0.75);
+          xleft = board.getX(board.size - 0.25);
+          ytop = board.getY(-0.75);
+          ybottom = board.getY(board.size - 0.25);
+
+          for (let i = 0; i < board.size; i++) {
+            ch = i + "A".charCodeAt(0);
+            if (ch >= "I".charCodeAt(0)) ch++;
+
+            t = board.getY(i);
+            this.fillText(board.size - i, xright, t);
+            this.fillText(board.size - i, xleft, t);
+
+            t = board.getX(i);
+            this.fillText(String.fromCharCode(ch), t, ytop);
+            this.fillText(String.fromCharCode(ch), t, ybottom);
+          }
+
+          this.fillStyle = "black";
+        }
+      }
+    }
+  };
+
   private drawBoard = () => {
+    const offset = -0.5;
+    const width = 600;
+
     let board = new WGo.Board(document.getElementById("board"), {
-      width: 600
+      width: 600,
+      section: {
+        top: 0.5,
+        left: 0.5,
+        right: -0.5,
+        bottom: -0.5
+      }
     });
+
+    board.addCustomObject(this.drawCoordinates());
 
     board.addEventListener("click", (x: number, y: number) => {
       if (!board.obj_arr[x][y].length) {
