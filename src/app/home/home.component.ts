@@ -17,11 +17,20 @@ export class HomeComponent implements OnInit {
 
   quote: string;
   isLoading: boolean;
+  turn: string;
+  getTurn = () => {
+    return this.turn === "W"
+      ?
+      "WHITE's Turn"
+      :
+      "BLACK's Turn"
+  };
 
   constructor(private quoteService: QuoteService) {
   }
 
   ngOnInit() {
+    this.turn = "W";
     this.isLoading = true;
     this.quoteService.getRandomQuote({category: 'dev'})
       .finally(() => {
@@ -38,37 +47,14 @@ export class HomeComponent implements OnInit {
       width: 600
     });
 
-    interface LooseObject {
-      [key: string]: any
-    }
-
-    let tool: LooseObject = document.getElementById("tool");
-
     board.addEventListener("click", (x: number, y: number) => {
-
-      if (tool.value == "black") {
+      if (!board.obj_arr[x][y].length) {
         board.addObject({
           x: x,
           y: y,
-          c: WGo.B
+          c: WGo[this.turn]
         });
-      }
-      else if (tool.value == "white") {
-        board.addObject({
-          x: x,
-          y: y,
-          c: WGo.W
-        });
-      }
-      else if (tool.value == "remove") {
-        board.removeObjectsAt(x, y);
-      }
-      else {
-        board.addObject({
-          x: x,
-          y: y,
-          type: tool.value
-        });
+        this.turn = this.turn === "W" ? "B" : "W";
       }
     });
   };

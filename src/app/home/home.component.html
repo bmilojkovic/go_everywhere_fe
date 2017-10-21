@@ -2,15 +2,8 @@
   <div class="main-container">
     <h1 class="header-container">
       <span>Go, Go everywhere!</span>
+      <span>{{getTurn()}}</span>
     </h1>
-    <select title="select figure" id="tool" style="display: block; margin-bottom: 10px;">
-      <option value="black" selected>Black stone</option>
-      <option value="white">White stone</option>
-      <option value="SQ">Square</option>
-      <option value="TR">Triangle</option>
-      <option value="CR">Circle</option>
-      <option value="remove">Remove</option>
-    </select>
     <app-loader [isLoading]="isLoading"></app-loader>
     <div id="board">
     </div>
