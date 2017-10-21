@@ -1,10 +1,18 @@
 <div class="container-fluid">
-  <div class="jumbotron text-center">
-    <h1>
-      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo"/>
-      <span translate>Hello world !</span>
+  <div class="main-container">
+    <h1 class="header-container">
+      <span>Go, Go everywhere!</span>
     </h1>
+    <select title="select figure" id="tool" style="display: block; margin-bottom: 10px;">
+      <option value="black" selected>Black stone</option>
+      <option value="white">White stone</option>
+      <option value="SQ">Square</option>
+      <option value="TR">Triangle</option>
+      <option value="CR">Circle</option>
+      <option value="remove">Remove</option>
+    </select>
     <app-loader [isLoading]="isLoading"></app-loader>
-    <q [hidden]="isLoading">{{quote}}</q>
+    <div id="board">
+    </div>
   </div>
 </div>
