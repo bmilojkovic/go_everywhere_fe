@@ -43,7 +43,6 @@ export class HomeComponent implements OnInit {
 
   private drawCoordinates = () => {
     return {
-      // draw on grid layer
       grid: {
         draw: function (args: any, board: any) {
           let ch, t, xright, xleft, ytop, ybottom;
@@ -82,12 +81,12 @@ export class HomeComponent implements OnInit {
     const width = 600;
 
     let board = new WGo.Board(document.getElementById("board"), {
-      width: 600,
+      width: width,
       section: {
-        top: 0.5,
-        left: 0.5,
-        right: -0.5,
-        bottom: -0.5
+        top: offset,
+        left: offset,
+        right: offset,
+        bottom: offset
       }
     });
 

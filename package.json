@@ -2,6 +2,7 @@
   "name": "go-everywhere-fe",
   "version": "1.0.0",
   "private": true,
+  "author": "Aleksandar Ogrizovic",
   "scripts": {
     "ng": "ng",
     "build": "npm run env -s && ng build --prod",
