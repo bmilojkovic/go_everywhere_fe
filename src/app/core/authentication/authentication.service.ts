@@ -13,6 +13,12 @@ export interface LoginContext {
   remember?: boolean;
 }
 
+export interface RegisterContext {
+    username: string;
+    password: string;
+    rank: number;
+}
+
 const credentialsKey = 'credentials';
 
 /**
@@ -40,6 +46,16 @@ export class AuthenticationService {
       token: '123456'
     };
     this.setCredentials(data, context.remember);
+    return Observable.of(data);
+  }
+
+
+  register(context: RegisterContext) {
+    const data = {
+      username: context.username,
+      password: context.password,
+      rank: context.password
+    };
     return Observable.of(data);
   }
 

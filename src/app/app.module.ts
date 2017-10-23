@@ -1,3 +1,4 @@
+import { LobbyComponent } from './lobby/lobby.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -13,6 +14,8 @@ import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { AboutModule } from './about/about.module';
 import { LoginModule } from './login/login.module';
+import { RegisterModule } from './register/register.module';
+import { LobbyModule } from './lobby/lobby.module';
 
 @NgModule({
   imports: [
@@ -26,6 +29,8 @@ import { LoginModule } from './login/login.module';
     HomeModule,
     AboutModule,
     LoginModule,
+    RegisterModule,
+    LobbyModule,
     AppRoutingModule
   ],
   declarations: [AppComponent],

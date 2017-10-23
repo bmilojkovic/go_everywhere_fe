@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="main-container">
+        <table>
+            <th></th>
+            <th>Player</th>
+            <th>Size</th>
+            <th>Time</th>
+            <th>Ranked</th>
+            <th>Handicap</th>
+            <th>Name</th>
+            <th>Rules</th>
+            <tr *ngFor="let game of games">
+                <td *ngIf="game.acceptable">Accepting</td>
+                <td *ngIf="!game.acceptable">Not accepting</td>
+                <td>{{game.player}}</td>
+                <td>{{game.size}}</td>
+                <td>{{game.time}}</td>
+                <td *ngIf="game.ranked;">Yes</td>
+                <td *ngIf="!game.ranked;">No</td>
+                <td *ngIf="game.handicap;">Yes</td>
+                <td *ngIf="!game.handicap;">No</td>
+                <td>{{game.name}}</td>
+                <td>{{game.rules}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
