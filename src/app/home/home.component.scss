@@ -23,7 +23,12 @@ q {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #333;
 }
 
 #board {
+}
+
+app-loader {
+  height: 60px;
 }
