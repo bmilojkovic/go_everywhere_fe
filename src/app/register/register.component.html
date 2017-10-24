@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="card col-md-6 mt-3 mx-auto">
+        <div class="card-body">
+            <form (ngSubmit)="register()" [formGroup]="registerForm" novalidate>
+            <div class="form-group">
+                <label class="d-block">
+                <input type="text" class="form-control" formControlName="username"
+                        [placeholder]="'Username' | translate"/>
+                <span hidden translate>Username</span>
+                <small [hidden]="registerForm.controls.username.valid || registerForm.controls.username.untouched"
+                        class="text-danger" translate>
+                    Username is required
+                </small>
+                </label>
+                <label class="d-block">
+                <input type="password" class="form-control" formControlName="password"
+                        [placeholder]="'Password' | translate" required/>
+                <span hidden translate>Password</span>
+                <small [hidden]="registerForm.controls.password.valid || registerForm.controls.password.untouched"
+                        class="text-danger" translate>
+                    Password is required
+                </small>
+                </label>
+                <label class="d-block">
+                    <select class="form-control" formControlName="rank">
+                        <option value="1">1 Kyu</option>
+                        <option value="2">2 Kyu</option>
+                        <option value="3">3 Kyu</option>
+                        <option value="4">4 Kyu</option>
+                        <option value="5">5 Kyu</option>
+                    </select>
+                    <span hidden translate>Rank</span>
+                    <small [hidden]="registerForm.controls.rank.valid || registerForm.controls.rank.untouched"
+                        class="text-danger" translate>
+                    Please select a rank
+                    </small>
+                </label>
+            </div>
+            <button class="btn btn-primary w-100" type="submit" [disabled]="registerForm.invalid || isLoading">
+                <i class="fa fa-cog fa-spin" [hidden]="!isLoading"></i>
+                <span translate>Register</span>
+            </button>
+            </form>
+        </div>
+    </div>
+</div>
