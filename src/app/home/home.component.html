@@ -1,0 +1,24 @@
+ <div class="home-container" style="margin-top: -1rem">
+    <div class="sidebar-container">
+      <div class="sidebar">
+        <div class="sidebar-header">
+          Friends
+        </div>
+        <div class="sidebar-body">
+          <div *ngFor="let myFriend of myFriends">
+            <div class="friend">
+              <i *ngIf="myFriend.status" class="friend-status-active fa fa-circle"></i>
+              <i *ngIf="!myFriend.status" class="friend-status-inactive fa fa-circle-o"></i>
+              <img src="../../assets/user-default.png" />
+              <div class="friend-name">
+                {{myFriend.firstName}} {{myFriend.lastName}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="games-container">
+    </div>
+  </div>
+
