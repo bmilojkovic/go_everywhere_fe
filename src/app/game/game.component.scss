@@ -1,0 +1,34 @@
+.logo {
+  width: 100px;
+  height: 120px;
+}
+
+q {
+  font-style: italic;
+  font-size: 1.2rem;
+  quotes: "« " " »";
+  position: relative;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+#board {
+}
+
+app-loader {
+  height: 60px;
+}
