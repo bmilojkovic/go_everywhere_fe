@@ -11,6 +11,10 @@ interface Friends extends Array<Friend> {
 }
 
 interface Game {
+  firstPlayer: string,
+  firstPlayerTime: string,
+  secondPlayer: string,
+  secondPlayerTime: string
 }
 
 interface Games extends Array<Game> {
@@ -34,7 +38,42 @@ const friends: Friends = [
 ];
 
 const games: Games = [
-  {}, {}, {}, {}, {}, {}, {}
+  {
+    firstPlayer: "Jordan",
+    firstPlayerTime: "3:00",
+    secondPlayer: "Michael",
+    secondPlayerTime: "2:55"
+  },
+  {
+    firstPlayer: "Jack",
+    firstPlayerTime: "4:00",
+    secondPlayer: "Loef",
+    secondPlayerTime: "4:55"
+  },
+  {
+    firstPlayer: "Lires",
+    firstPlayerTime: "3:20",
+    secondPlayer: "Klof",
+    secondPlayerTime: "5:55"
+  },
+  {
+    firstPlayer: "Uler",
+    firstPlayerTime: "5:00",
+    secondPlayer: "Mische",
+    secondPlayerTime: "4:55"
+  },
+  {
+    firstPlayer: "xxtof",
+    firstPlayerTime: "2:00",
+    secondPlayer: "treof",
+    secondPlayerTime: "2:55"
+  },
+  {
+    firstPlayer: "lover",
+    firstPlayerTime: "3:00",
+    secondPlayer: "jjookkerr",
+    secondPlayerTime: "2:55"
+  },
 ];
 
 @Component({

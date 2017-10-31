@@ -28,8 +28,12 @@
     <h3 > Active games </h3>
     <div class="games-list">
       <div *ngFor="let game of games">
-        <div>
+        <div class="active-game">
+          <div class="first-player">{{game.firstPlayer}}</div>
+          <div class="first-player-time">{{game.firstPlayerTime}}</div>
           <img class="game" src="../../assets/sample_game.png" />
+          <div class="second-player">{{game.secondPlayer}}</div>
+          <div class="second-player-time">{{game.secondPlayerTime}}</div>
         </div>
       </div>
     </div>

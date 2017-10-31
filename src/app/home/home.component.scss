@@ -5,9 +5,9 @@
 }
 
 .sidebar-container {
-  -moz-box-shadow:    -3px 0 7px 0 #000;
+  -moz-box-shadow: -3px 0 7px 0 #000;
   -webkit-box-shadow: -3px 0 7px 0 #000;
-  box-shadow:         -3px 0 7px 0 #000;
+  box-shadow: -3px 0 7px 0 #000;
   overflow-y: scroll;
   position: absolute;
   left: 0;
@@ -22,7 +22,7 @@
   height: 100%;
 }
 
-.sidebar-header{
+.sidebar-header {
   padding: 10px;
   font-size: 28px;
   text-align: center;
@@ -54,7 +54,7 @@
   justify-content: flex-start;
   img {
     margin-right: 15px;
-    border: 1px solid rgba(10,10,10,0.1);
+    border: 1px solid rgba(10, 10, 10, 0.1);
     border-radius: 20px;
     width: 40px;
   }
@@ -70,8 +70,8 @@
   }
 }
 
-.friend:hover{
-  .friend-name{
+.friend:hover {
+  .friend-name {
     font-size: 20px;
     color: black;
   }
@@ -91,14 +91,37 @@
   height: 100%;
 }
 
+.active-game {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.active-game:hover {
+  cursor: pointer;
+  .game {
+    padding: 10px;
+  }
+  .first-player {
+    top: -13px;
+    left: 12px;
+  }
+  .second-player {
+    left: 12px;
+    bottom: -13px;
+  }
+  .first-player-time {
+    top: -13px;
+    right: 12px;
+  }
+  .second-player-time {
+    bottom: -13px;
+    right: 12px;
+  }
+}
+
 .game {
   padding: 20px;
   width: 300px;
-}
-
-.game:hover {
-  cursor: pointer;
-  padding: 10px;
 }
 
 .games-list {
@@ -109,3 +132,26 @@
   justify-content: center;
 }
 
+.first-player {
+  position: absolute;
+  top: -3px;
+  left: 22px;
+}
+
+.second-player {
+  position: absolute;
+  left: 22px;
+  bottom: -3px;
+}
+
+.first-player-time {
+  position: absolute;
+  top: -3px;
+  right: 22px;
+}
+
+.second-player-time {
+  position: absolute;
+  bottom: -3px;
+  right: 22px;
+}
