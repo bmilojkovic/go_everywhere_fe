@@ -36,6 +36,7 @@
 }
 
 .sidebar-body {
+  height: 100%;
   padding: 25px;
 }
 
@@ -77,5 +78,34 @@
 }
 
 .games-container {
+  overflow: auto;
   margin-left: 350px;
+
+  h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  padding: 25px 25px 100px 25px;
+  overflow-y: scroll;
+  height: 100%;
 }
+
+.game {
+  padding: 20px;
+  width: 300px;
+}
+
+.game:hover {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.games-list {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+

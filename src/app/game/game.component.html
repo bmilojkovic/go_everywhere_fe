@@ -1,10 +1,12 @@
-<div class="container-fluid">
+<div class="game-main-container" style="margin-top: -1rem">
   <div class="main-container">
-    <h1 class="header-container">
-      <span>Go, Go everywhere!</span>
-      <span>{{getTurn()}}</span>
-    </h1>
-    <app-loader [isLoading]="isLoading"></app-loader>
+    <div class="loader-container">
+      <div class="get-turn">{{getTurn()}}</div>
+      <div>
+        <app-loader [isLoading]="isLoading"></app-loader>
+      </div>
+    </div>
+
     <div id="board">
     </div>
   </div>

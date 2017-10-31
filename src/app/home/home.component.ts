@@ -10,6 +10,12 @@ interface Friend {
 interface Friends extends Array<Friend> {
 }
 
+interface Game {
+}
+
+interface Games extends Array<Game> {
+}
+
 const friends: Friends = [
   {status: true, firstName: 'George', lastName: 'Hill'},
   {status: true, firstName: 'Deandre', lastName: 'Jordan'},
@@ -27,6 +33,10 @@ const friends: Friends = [
   {status: false, firstName: 'Kyrie', lastName: 'Irving'},
 ];
 
+const games: Games = [
+  {}, {}, {}, {}, {}, {}, {}
+];
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -34,6 +44,7 @@ const friends: Friends = [
 })
 export class HomeComponent implements OnInit {
   myFriends: any;
+  games: Games;
 
   constructor() {
   }
@@ -51,6 +62,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.myFriends = friends;
+    this.games = games;
   }
 
 }
