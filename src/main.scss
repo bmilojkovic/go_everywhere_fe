@@ -12,3 +12,12 @@
 
 // Theme customization
 @import "theme/theme";
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}

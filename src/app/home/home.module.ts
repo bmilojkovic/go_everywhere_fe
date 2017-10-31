@@ -9,18 +9,8 @@ import { HomeComponent } from './home.component';
 import { QuoteService } from './quote.service';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    TranslateModule,
-    CoreModule,
-    SharedModule,
-    HomeRoutingModule
-  ],
-  declarations: [
-    HomeComponent
-  ],
-  providers: [
-    QuoteService
-  ]
+  imports: [CommonModule, TranslateModule, CoreModule, SharedModule, HomeRoutingModule],
+  declarations: [HomeComponent],
+  providers: [QuoteService],
 })
-export class HomeModule { }
+export class HomeModule {}
