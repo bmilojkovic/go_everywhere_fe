@@ -1,0 +1,42 @@
+<div class="home-container" style="margin-top: -1rem">
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        Friends
+      </div>
+      <div class="sidebar-body">
+        <div class="sidebar-search">
+          <label class="d-block">
+            <input (keyup)="onKey($event)" type="text" class="form-control" formControlName="search"
+                   placeholder='Search'/>
+          </label>
+        </div>
+        <div *ngFor="let myFriend of myFriends">
+          <div class="friend">
+            <i *ngIf="myFriend.status" class="friend-status-active fa fa-circle"></i>
+            <i *ngIf="!myFriend.status" class="friend-status-inactive fa fa-circle-o"></i>
+            <img src="../../assets/user-default.png"/>
+            <div class="friend-name">
+              {{myFriend.firstName}} {{myFriend.lastName}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="games-container">
+    <h3 > Active games </h3>
+    <div class="games-list">
+      <div *ngFor="let game of games">
+        <div class="active-game">
+          <div class="first-player">{{game.firstPlayer}}</div>
+          <div class="first-player-time">{{game.firstPlayerTime}}</div>
+          <img class="game" src="../../assets/sample_game.png" />
+          <div class="second-player">{{game.secondPlayer}}</div>
+          <div class="second-player-time">{{game.secondPlayerTime}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,47 @@
+.logo {
+  width: 100px;
+  height: 120px;
+}
+
+q {
+  font-style: italic;
+  font-size: 1.2rem;
+  quotes: "« " " »";
+  position: relative;
+}
+
+.main-container {
+  height: 100%;
+  overflow-y: scroll;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader-container {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .get-turn {
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 10px;
+  }
+}
+
+#board {
+}
+
+app-loader {
+  height: 60px;
+}
+
+.game-main-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}

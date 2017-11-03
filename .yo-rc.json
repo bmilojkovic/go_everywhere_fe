@@ -1,0 +1,17 @@
+{
+  "generator-ngx-rocket": {
+    "version": "2.2.1",
+    "props": {
+      "appName": "go_everywhere_fe",
+      "target": [
+        "web"
+      ],
+      "pwa": true,
+      "ui": "bootstrap",
+      "auth": true,
+      "projectName": "go-everywhere-fe",
+      "mobile": [],
+      "webview": []
+    }
+  }
+}
