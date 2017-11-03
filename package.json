@@ -9,8 +9,9 @@
   },
   "scripts": {
     "ng": "ng",
+    "preinstall": "npm install -g ng",
     "build": "npm run env -s && ng build --prod",
-    "postinstall": "node index.js",
+    "postinstall": "ng build --prod",
     "start": "node index.js",
     "lint": "ng lint --type-check && stylelint \"src/**/*.scss\" --syntax scss && htmlhint \"src\" --config .htmlhintrc",
     "test": "ng test",
