@@ -5,12 +5,13 @@
   "author": "Aleksandar Ogrizovic",
   "main": "index.js",
   "engines": {
-    "node": "6.11.1"
+    "node": "6.11.1",
+    "npm": "5.5.1"
   },
   "scripts": {
     "ng": "ng",
     "build": "npm run env -s && ng build --prod",
-    "postinstall": "npm run env -s && ng build --prod",
+    "postinstall": "ng build --prod",
     "start": "node index.js",
     "lint": "ng lint --type-check && stylelint \"src/**/*.scss\" --syntax scss && htmlhint \"src\" --config .htmlhintrc",
     "test": "ng test",
@@ -23,6 +24,7 @@
   },
   "dependencies": {
     "@angular/animations": "^4.2.6",
+    "@angular/cli": "^1.4.2",
     "@angular/common": "^4.2.6",
     "@angular/compiler": "^4.2.6",
     "@angular/core": "^4.2.6",
@@ -41,10 +43,10 @@
     "lodash": "^4.17.4",
     "rxjs": "^5.4.0",
     "wgo": "^3.0.0-alpha.1",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+     "typescript": "~2.4.2"
   },
   "devDependencies": {
-    "@angular/cli": "^1.4.2",
     "@angular/compiler-cli": "^4.2.6",
     "@angular/language-service": "^4.2.6",
     "@biesbjerg/ngx-translate-extract": "^2.3.1",
@@ -71,8 +73,6 @@
     "stylelint-config-recommended-scss": "~2.0.0",
     "stylelint-config-standard": "~17.0.0",
     "stylelint-scss": "~2.1.0",
-    "ts-node": "^3.2.0",
-    "tslint": "~5.7.0",
-    "typescript": "~2.4.2"
+    "ts-node": "^3.2.0"
   }
 }
