@@ -3,7 +3,7 @@ import 'rxjs/add/operator/finally';
 import {Component, OnInit} from '@angular/core';
 import {GoActionsService, Turn} from '../core/go_actions/go_actions.service';
 
-const WGo = require('wgo');
+import * as WGo from 'wgo';
 
 @Component({
   selector: 'app-game',
