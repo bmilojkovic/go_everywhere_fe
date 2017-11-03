@@ -25,6 +25,8 @@
   "dependencies": {
     "@angular/animations": "^4.2.6",
     "@angular/cli": "^1.4.2",
+    "@angular/compiler-cli": "^4.2.6",
+    "@angular/language-service": "^4.2.6",
     "@angular/common": "^4.2.6",
     "@angular/compiler": "^4.2.6",
     "@angular/core": "^4.2.6",
@@ -47,8 +49,6 @@
      "typescript": "~2.4.2"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "^4.2.6",
-    "@angular/language-service": "^4.2.6",
     "@biesbjerg/ngx-translate-extract": "^2.3.1",
     "@ngx-rocket/scripts": "^1.0.4",
     "@types/jasmine": "^2.5.52",
