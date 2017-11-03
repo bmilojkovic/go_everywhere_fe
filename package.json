@@ -4,6 +4,9 @@
   "private": true,
   "author": "Aleksandar Ogrizovic",
   "main": "index.js",
+  "engines": {
+    "node": "6.11.1"
+  },
   "scripts": {
     "ng": "ng",
     "build": "npm run env -s && ng build --prod",
