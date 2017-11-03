@@ -10,7 +10,6 @@
   "scripts": {
     "ng": "ng",
     "build": "npm run env -s && ng build --prod",
-    "preinstall": "npm install -g ngx-scripts env2json",
     "postinstall": "ng build --prod",
     "start": "node index.js",
     "lint": "ng lint --type-check && stylelint \"src/**/*.scss\" --syntax scss && htmlhint \"src\" --config .htmlhintrc",
