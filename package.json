@@ -12,7 +12,7 @@
     "ng": "ng",
     "preinstall": "npm install -g @angular/cli",
     "build": "npm run env -s && ng build --prod",
-    "postinstall": "nng build --prod",
+    "postinstall": "ng build --prod",
     "start": "node index.js",
     "lint": "ng lint --type-check && stylelint \"src/**/*.scss\" --syntax scss && htmlhint \"src\" --config .htmlhintrc",
     "test": "ng test",
