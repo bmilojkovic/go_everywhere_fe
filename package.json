@@ -5,11 +5,11 @@
   "author": "Aleksandar Ogrizovic",
   "main": "index.js",
   "engines": {
-    "node": "6.11.1"
+    "node": "6.11.1",
+    "npm": "5.5.1"
   },
   "scripts": {
     "ng": "ng",
-    "preinstall": "npm install -g ng",
     "build": "npm run env -s && ng build --prod",
     "postinstall": "ng build --prod",
     "start": "node index.js",
