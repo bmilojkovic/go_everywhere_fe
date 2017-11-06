@@ -1,18 +1,30 @@
-var express = require('express');
-var app = express();
-var path = require('path');
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
+const http = require('http');
+const app = express();
 
-app.use(express.static(path.join(__dirname + "/dist")));
+const api = require('./server/api');
 
-app.use("/assets", express.static(__dirname + '/dist/assets'));
+// Parsers
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false}));
 
-// viewed at based directory http://localhost:8080/
-app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname + '/dist/index.html'));
+// Angular DIST output folder
+app.use(express.static(path.join(__dirname, '/dist')));
+
+// API location
+app.use('/api', api);
+
+// Send all other requests to the Angular app
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/dist/index.html'));
 });
 
-// add other routes below
-app.get('/about', function (req, res) {
-  res.sendFile(path.join(__dirname + '/views/about.html'));
-});
-app.listen(process.env.PORT || 1234);
+//Set Port
+const port = process.env.PORT || '3000';
+app.set('port', port);
+
+const server = http.createServer(app);
+
+server.listen(port, () => console.log(`Running on localhost:${port}`));
