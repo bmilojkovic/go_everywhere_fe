@@ -21,6 +21,10 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/dist/index.html'));
 });
 
+app.post('/*', function(request, response) {
+  response.redirect('/');
+});
+
 //Set Port
 const port = process.env.PORT || '3000';
 app.set('port', port);
