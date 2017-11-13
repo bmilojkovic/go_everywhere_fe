@@ -13,6 +13,8 @@ pipeline {
           steps {
             sh '''rm -rf node_modules/
 
+npm install -g angular-cli
+
 npm install'''
           }
         }
