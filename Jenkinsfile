@@ -23,7 +23,7 @@ npm install'''
         }
         stage('list files') {
           steps {
-            sh 'ls'
+            sh 'ls -a'
           }
         }
       }
