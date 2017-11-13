@@ -11,7 +11,9 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
-            sh '''rm -rf node_modules/
+            sh '''rm .angular-cli.json
+
+rm -rf node_modules/
 
 npm rebuild node-sass
 
