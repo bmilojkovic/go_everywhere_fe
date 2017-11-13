@@ -10,8 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh '''npm install
-ng build
-'''
+npm run build'''
       }
     }
     stage('Test') {
