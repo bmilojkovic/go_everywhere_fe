@@ -8,7 +8,11 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm install'
+        sh '''rm -rf node_modules
+rm package-lock.json
+npm cache clean
+npm install
+'''
       }
     }
     stage('Test') {
