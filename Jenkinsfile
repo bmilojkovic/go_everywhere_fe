@@ -11,7 +11,14 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
-            sh 'npm install'
+            sh '''node -v
+npm -v
+
+npm cache clean
+
+rm -rf node_modules/
+
+npm install'''
           }
         }
         stage('list files') {
