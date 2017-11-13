@@ -11,7 +11,8 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
-            sh 'npm install'
+            sh '''ng set --global warnings.versionMismatch=false
+npm install'''
           }
         }
         stage('list files') {
