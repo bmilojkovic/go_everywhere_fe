@@ -13,6 +13,12 @@ pipeline {
           steps {
             sh '''rm -rf node_modules/
 
+mkdir /home/node/.npm-global
+
+PATH=/home/node/.npm-global/bin:$PATH
+
+NPM_CONFIG_PREFIX=/home/node/.npm-global
+
 npm rebuild node-sass
 
 npm install -g angular-cli
