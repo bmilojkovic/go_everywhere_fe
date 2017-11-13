@@ -8,8 +8,18 @@ pipeline {
   }
   stages {
     stage('Build') {
-      steps {
-        sh 'npm install'
+      parallel {
+        stage('Build') {
+          steps {
+            sh '''npm install -g @angular/cli
+npm install'''
+          }
+        }
+        stage('list files') {
+          steps {
+            sh 'ls'
+          }
+        }
       }
     }
     stage('Test') {
