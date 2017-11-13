@@ -2,6 +2,7 @@ pipeline {
   agent {
     docker {
       image 'mkenney/npm:alpine'
+      args '-u root'
     }
     
   }
