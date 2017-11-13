@@ -16,7 +16,7 @@ rm -rf node_modules/
 
 npm rebuild node-sass
 
-npm install -g @angular/cli --unsafe 
+npm install -g @angular/cli@1.4.9 --unsafe 
 
 npm install'''
           }
