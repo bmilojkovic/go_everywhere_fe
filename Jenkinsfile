@@ -1,7 +1,6 @@
 pipeline {
   agent {
     docker {
-      args '-u root'
       image 'mkenney/npm:alpine'
     }
     
@@ -32,9 +31,5 @@ npm install'''
         echo 'Build and test end'
       }
     }
-  }
-  environment {
-    npm_config_cache = 'npm-cache'
-    HOME = '.'
   }
 }
