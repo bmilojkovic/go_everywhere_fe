@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'node:9.1.0'
-    }
-    
-  }
+  agent none
   stages {
     stage('Build') {
       steps {
@@ -21,8 +16,5 @@ pipeline {
         echo 'Build and test end'
       }
     }
-  }
-  environment {
-    npm_config_cache = 'npm-cache'
   }
 }
