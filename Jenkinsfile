@@ -1,15 +1,23 @@
-pipeline {
-  agent {
-    docker {
-      image 'node:9.1.0'
-      args '-p 3000:3000'
+ipeline {
+    agent {
+        docker {
+            image 'node:6-alpine'
+            args '-p 3000:3000'
+        }
     }
-  }
-  stages {
-    stage('install-dep') {
-      steps {
-	      sh 'npm install'
-      }
+    environment { 
+        CI = 'true'
     }
-  }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'npm install'
+            }
+        }
+        stage('Deliver') { 
+            steps {
+                input message: 'Finished using the web site? (Click "Proceed" to continue)' 
+            }
+        }
+    }
 }
