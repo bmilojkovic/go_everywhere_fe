@@ -2,15 +2,14 @@ pipeline {
   agent {
     docker {
       args '-u root'
-      image 'teracy/angular-cli'
+      image 'mkenney/npm:alpine'
     }
     
   }
   stages {
     stage('Build') {
       steps {
-        sh '''npm install -g @angular/cli
-npm install'''
+        sh 'npm install'
       }
     }
     stage('Test') {
