@@ -30,7 +30,9 @@ npm install'''
     }
     stage('Test') {
       steps {
-        sh 'npm test'
+        sh '''ls -a
+
+npm test'''
       }
     }
     stage('Post') {
