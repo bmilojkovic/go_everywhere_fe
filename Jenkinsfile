@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('install-dependencies') {
+    stage('install-dep') {
       steps {
 	      sh returnStatus: true, script: 'npm install'
       }
