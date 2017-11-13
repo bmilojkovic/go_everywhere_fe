@@ -1,11 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      args '-u root'
-      image 'teracy/angular-cli'
-    }
-    
-  }
+  agent any
   stages {
     stage('Build') {
       parallel {
@@ -32,9 +26,5 @@ npm install'''
         echo 'Build and test end'
       }
     }
-  }
-  environment {
-    npm_config_cache = 'npm-cache'
-    HOME = '.'
   }
 }
