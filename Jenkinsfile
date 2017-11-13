@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       args '-u root'
-      image 'node:9.1.0'
+      image 'alexsuch/angular-cli'
     }
     
   }
