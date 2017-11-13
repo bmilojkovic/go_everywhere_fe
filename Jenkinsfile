@@ -11,8 +11,7 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
-            sh '''npm install -g @angular/cli
-npm install'''
+            sh 'npm install'
           }
         }
         stage('list files') {
