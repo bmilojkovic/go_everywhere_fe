@@ -1,5 +1,11 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'mkenney/npm'
+      args '-u root '
+    }
+    
+  }
   stages {
     stage('Build') {
       parallel {
@@ -25,5 +31,9 @@ pipeline {
         echo 'Build and test end'
       }
     }
+  }
+  environment {
+    npm_config_cache = 'npm-cache'
+    HOME = '.'
   }
 }
