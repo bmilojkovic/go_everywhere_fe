@@ -11,12 +11,7 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
-            sh '''node -v
-npm -v
-
-npm cache clean
-
-rm -rf node_modules/
+            sh '''rm -rf node_modules/
 
 npm install'''
           }
