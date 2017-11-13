@@ -14,7 +14,7 @@
     "postinstall": "ng build --prod",
     "start": "node index.js",
     "lint": "ng lint --type-check && stylelint \"src/**/*.scss\" --syntax scss && htmlhint \"src\" --config .htmlhintrc",
-    "test": "ng test",
+    "test": "ng test --single-run --code-coverage",
     "test:ci": "npm run lint -s && ng test --single-run --code-coverage",
     "e2e": "ng e2e",
     "translations:extract": "ngx-translate-extract --input ./src --output ./src/translations/template.json --format=json --clean -sort --marker extract",
@@ -25,13 +25,13 @@
   "dependencies": {
     "@angular/animations": "^4.2.6",
     "@angular/cli": "^1.4.2",
-    "@angular/compiler-cli": "^4.2.6",
-    "@angular/language-service": "^4.2.6",
     "@angular/common": "^4.2.6",
     "@angular/compiler": "^4.2.6",
+    "@angular/compiler-cli": "^4.2.6",
     "@angular/core": "^4.2.6",
     "@angular/forms": "^4.2.6",
     "@angular/http": "^4.2.6",
+    "@angular/language-service": "^4.2.6",
     "@angular/platform-browser": "^4.2.6",
     "@angular/platform-browser-dynamic": "^4.2.6",
     "@angular/router": "^4.2.6",
@@ -44,9 +44,10 @@
     "font-awesome": "^4.7.0",
     "lodash": "^4.17.4",
     "rxjs": "^5.4.0",
+    "tslint": "^5.8.0",
+    "typescript": "~2.4.2",
     "wgo": "^3.0.0-alpha.1",
-    "zone.js": "^0.8.14",
-    "typescript": "~2.4.2"
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@biesbjerg/ngx-translate-extract": "^2.3.1",
