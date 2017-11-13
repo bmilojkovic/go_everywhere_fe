@@ -10,11 +10,13 @@ pipeline {
     stage('Build') {
       steps {
         sh '''npm install
+npm run build
 '''
       }
     }
     stage('Test') {
       steps {
+        sh 'npm run lint'
         sh 'npm test'
       }
     }
