@@ -31,7 +31,7 @@ npm install'''
     }
     stage('Test') {
       steps {
-        sh 'ng -v'
+        sh 'npm test'
       }
     }
     stage('Post') {
