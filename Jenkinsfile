@@ -11,8 +11,7 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
-            sh '''
-rm -rf node_modules/
+            sh '''rm -rf node_modules/
 
 npm rebuild node-sass
 
@@ -43,6 +42,6 @@ npm test'''
   }
   environment {
     npm_config_cache = 'npm-cache'
-    HOME = '.'
+    HOME = '/home/jenkins'
   }
 }
