@@ -13,6 +13,8 @@ pipeline {
           steps {
             sh '''rm -rf node_modules/
 
+wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+
 npm rebuild node-sass
 
 npm install -g @angular/cli@1.4.9 --unsafe 
@@ -33,7 +35,7 @@ npm install'''
 
 npm test
 
-npm run lint'''
+npm run lint:ci'''
       }
     }
     stage('Post') {
