@@ -1,5 +1,11 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image '_/node'
+      args '-u root'
+    }
+    
+  }
   stages {
     stage('Build') {
       parallel {
