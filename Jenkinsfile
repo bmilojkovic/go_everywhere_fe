@@ -15,8 +15,6 @@ pipeline {
 
 wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
-npm rebuild node-sass
-
 npm install -g @angular/cli@1.4.9 --unsafe
 
 npm install'''
