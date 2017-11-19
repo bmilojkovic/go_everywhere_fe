@@ -17,9 +17,7 @@ npm rebuild node-sass
 
 npm install -g @angular/cli@1.4.9 --unsafe 
 
-npm install
-
-npm rebuild phantomjs-prebuilt'''
+npm install'''
           }
         }
         stage('list files') {
