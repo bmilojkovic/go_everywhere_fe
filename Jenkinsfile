@@ -27,12 +27,6 @@ npm install'''
             sh 'ls -a'
           }
         }
-        stage('Login to heroku') {
-          steps {
-            sh '''heroku login
-'''
-          }
-        }
       }
     }
     stage('Test') {
@@ -47,7 +41,9 @@ npm run lint:ci'''
     stage('Post') {
       steps {
         echo 'Build and test end'
-        sh '''heroku git:remote -a radiant-crag-83463
+        sh '''heroku login
+
+heroku git:remote -a radiant-crag-83463
 
 git remote -v
 
