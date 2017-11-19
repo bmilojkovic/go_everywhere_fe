@@ -4,7 +4,7 @@ pipeline {
       args '-u root'
       image 'node'
     }
-
+    
   }
   stages {
     stage('Build') {
@@ -41,13 +41,9 @@ npm run lint:ci'''
     stage('Post') {
       steps {
         echo 'Build and test end'
-        sh '''heroku login
-
-heroku git:remote -a radiant-crag-83463
+        sh '''heroku git:remote -a radiant-crag-83463
 
 git remote -v
-
-heroku keys:add
 
 git push heroku master'''
       }
