@@ -31,7 +31,7 @@ npm install'''
       steps {
         sh '''ls -a
 
-npm test'''
+npm run lint'''
       }
     }
     stage('Post') {
