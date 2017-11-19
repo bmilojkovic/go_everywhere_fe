@@ -41,11 +41,17 @@ npm run lint:ci'''
     stage('Post') {
       steps {
         echo 'Build and test end'
-        sh '''heroku git:remote -a radiant-crag-83463
+        sh '''branch=$(git symbolic-ref --short HEAD)
 
-git remote -v
-
-git push heroku master'''
+if [ "$branch" == "master" ]
+then 
+	git checkout --f develop
+	git push heroku HEAD:master
+elif [ "$branch" == "develop" ]
+then 
+	git checkout --f develop
+	git push heroku HEAD:develop:master
+fi'''
       }
     }
   }
