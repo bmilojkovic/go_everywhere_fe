@@ -143,5 +143,6 @@
     "no-access-missing-member": true,
     "templates-use-public": true,
     "invoke-injectable": true
-  }
+  },
+  "defaultSeverity": "warning"
 }
