@@ -52,7 +52,7 @@ elif [ "${BRANCH_NAME}" == "develop" ]
 then 
     git checkout --f develop
     git push heroku HEAD:develop:master
-else echo "This branch should not deploy
+else echo "This branch should not deploy"
 fi'''
       }
     }
