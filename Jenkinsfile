@@ -43,12 +43,12 @@ npm run lint:ci'''
         echo 'Build and test end'
         sh '''echo ${BRANCH_NAME}
 
-if [ "${BRANCH_NAME}" == "master" ]
+if [ "${BRANCH_NAME}" = "master" ]
 then
     heroku git:remote -a radiant-crag-83463
     git checkout --f master
     git push heroku HEAD:master
-elif [ "${BRANCH_NAME}" == "develop" ]
+elif [ "${BRANCH_NAME}" = "develop" ]
 then 
     git checkout --f develop
     git push heroku HEAD:develop:master
