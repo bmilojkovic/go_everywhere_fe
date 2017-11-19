@@ -27,6 +27,12 @@ npm install'''
             sh 'ls -a'
           }
         }
+        stage('Login to heroku') {
+          steps {
+            sh '''heroku login
+'''
+          }
+        }
       }
     }
     stage('Test') {
