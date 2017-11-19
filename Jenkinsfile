@@ -1,8 +1,8 @@
 pipeline {
   agent {
     docker {
-      image '_/node'
       args '-u root'
+      image 'mkenney/npm'
     }
     
   }
