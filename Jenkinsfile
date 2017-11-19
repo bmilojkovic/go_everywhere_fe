@@ -41,7 +41,7 @@ npm run lint:ci'''
     stage('Post') {
       steps {
         echo 'Build and test end'
-        sh '''branch=$(git symbolic-ref --short HEAD)
+        sh '''branch=$(git branch | sed -n -e \'s/^\\* \\(.*\\)/\\1/p\')
 
 if [ "$branch" == "master" ]
 then 
