@@ -41,7 +41,9 @@ npm run lint:ci'''
     stage('Post') {
       steps {
         echo 'Build and test end'
-        sh '''heroku git:remote -a radiant-crag-83463
+        sh '''delete workspace
+
+heroku git:remote -a radiant-crag-83463
 
 git remote -v
 
