@@ -41,7 +41,7 @@ npm run lint:ci'''
     stage('Post') {
       steps {
         echo 'Build and test end'
-        sh '''heroku login
+        sh '''heroku run bash
 
 heroku git:remote -a radiant-crag-83463
 
