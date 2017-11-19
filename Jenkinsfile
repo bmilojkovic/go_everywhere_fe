@@ -1,11 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'mkenney/npm'
-      args '-u root '
-    }
-    
-  }
+  agent any
   stages {
     stage('Build') {
       parallel {
@@ -30,6 +24,8 @@ npm install'''
     stage('Test') {
       steps {
         sh '''ls -a
+
+npm test
 
 npm run lint'''
       }
