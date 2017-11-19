@@ -17,8 +17,6 @@ npm rebuild node-sass
 
 npm install -g @angular/cli@1.4.9 --unsafe 
 
-yum install -y fontconfig freetype-devel
-
 npm install'''
           }
         }
