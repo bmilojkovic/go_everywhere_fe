@@ -5,6 +5,7 @@ module.exports = function(config) {
   config.set({
     basePath: '',
     frameworks: ['jasmine', '@angular/cli'],
+    transports: ['xhr-polling', 'jsonp-polling'],
     plugins: [
       require('karma-jasmine'),
       require('karma-phantomjs-launcher'),
