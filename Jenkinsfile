@@ -37,9 +37,11 @@ npm run lint:ci'''
       }
     }
     stage('Post') {
-      steps {
-        echo 'Build and test end'
-        sh '''delete workspace
+      parallel {
+        stage('Post') {
+          steps {
+            echo 'Build and test end'
+            sh '''delete workspace
 
 heroku git:remote -a radiant-crag-83463
 
@@ -48,6 +50,13 @@ git remote -v
 heroku keys:add
 
 git push heroku master'''
+          }
+        }
+        stage('') {
+          steps {
+            cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenNotBuilt: true, cleanWhenSuccess: true, cleanWhenUnstable: true, cleanupMatrixParent: true, notFailBuild: true, skipWhenFailed: true, deleteDirs: true)
+          }
+        }
       }
     }
   }
