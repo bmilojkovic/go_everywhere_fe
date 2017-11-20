@@ -41,7 +41,7 @@ module.exports = function(config) {
     angularCli: {
       environment: 'dev'
     },
-    reporters: ['progress', 'junit', 'html'],
+    reporters: ['progress', 'html'],
     port: 9876,
     colors: true,
     // Level of logging, can be: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
