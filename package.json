@@ -15,6 +15,7 @@
     "start": "node index.js",
     "lint": "ng lint --type-check && stylelint \"src/**/*.scss\" --syntax scss && htmlhint \"src\" --config .htmlhintrc --force",
     "lint:ci": "ng lint --force",
+    "dev": "ng serve --proxy-config proxy.conf.js",
     "test": "ng test --single-run --code-coverage",
     "test:ci": "npm run lint -s && ng test --single-run --code-coverage",
     "e2e": "ng e2e",
