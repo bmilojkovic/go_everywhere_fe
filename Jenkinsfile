@@ -15,6 +15,8 @@ pipeline {
 
 wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
+heroku git:remote -a radiant-crag-83463
+
 npm rebuild node-sass
 
 npm install -g @angular/cli@1.4.9 --unsafe
@@ -45,7 +47,6 @@ npm run lint:ci'''
 
 if [ "${BRANCH_NAME}" = "master" ]
 then
-    heroku git:remote -a radiant-crag-83463
     git checkout --f master
     git push heroku HEAD:master
 elif [ "${BRANCH_NAME}" = "develop" ]
