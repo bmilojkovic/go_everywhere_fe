@@ -20,6 +20,7 @@ npm rebuild node-sass
 npm install -g @angular/cli@1.4.9 --unsafe
 
 npm install'''
+            slackSend(message: 'Started build', token: 'G4RX8a36M699Ws964k2oQHQj', color: '#00ff00', channel: 'build-status', baseUrl: 'https://testiranje-raf.slack.com/services/hooks/jenkins-ci/')
           }
         }
         stage('list files') {
@@ -27,15 +28,35 @@ npm install'''
             sh 'ls -a'
           }
         }
+        stage('build failed') {
+          steps {
+            catchError() {
+              slackSend(message: 'Build failed', color: '#ff0000', failOnError: true, baseUrl: 'https://testiranje-raf.slack.com/services/hooks/jenkins-ci/', token: 'G4RX8a36M699Ws964k2oQHQj', channel: 'build-status')
+            }
+            
+          }
+        }
       }
     }
     stage('Test') {
-      steps {
-        sh '''ls -a
+      parallel {
+        stage('Test') {
+          steps {
+            sh '''ls -a
 
 npm test
 
 npm run lint:ci'''
+          }
+        }
+        stage('tests failed') {
+          steps {
+            catchError() {
+              slackSend(message: 'Tests and lint Failed', color: '#ff0000', channel: 'build-status', token: 'G4RX8a36M699Ws964k2oQHQj', baseUrl: 'https://testiranje-raf.slack.com/services/hooks/jenkins-ci/')
+            }
+            
+          }
+        }
       }
     }
     stage('Post') {
@@ -45,13 +66,10 @@ npm run lint:ci'''
 
 if [ "${BRANCH_NAME}" == "master" ]
 then
-    heroku git:remote -a radiant-crag-83463
     git checkout --f master
-    git push heroku HEAD:master
 elif [ "${BRANCH_NAME}" == "develop" ]
 then 
     git checkout --f develop
-    git push heroku HEAD:develop:master
 else echo "This branch should not deploy"
 fi'''
       }
