@@ -20,11 +20,11 @@ npm rebuild node-sass
 npm install -g @angular/cli@1.4.9 --unsafe
 
 npm install'''
-            slackSend(message: 'Started build', token: 'G4RX8a36M699Ws964k2oQHQj', color: '#00ff00', channel: 'build-status', baseUrl: 'https://testiranje-raf.slack.com/services/hooks/jenkins-ci/')
             catchError() {
               slackSend(message: 'Build failed', color: '#ff0000', token: 'G4RX8a36M699Ws964k2oQHQj', baseUrl: 'https://testiranje-raf.slack.com/services/hooks/jenkins-ci/', channel: 'build-status')
             }
             
+            slackSend(message: 'Building success!', token: 'G4RX8a36M699Ws964k2oQHQj', baseUrl: 'https://testiranje-raf.slack.com/services/hooks/jenkins-ci/', channel: 'build-status', color: '#00ff00')
           }
         }
         stage('list files') {
@@ -32,27 +32,20 @@ npm install'''
             sh 'ls -a'
           }
         }
+        stage('Slack Message Start Build') {
+          steps {
+            slackSend(message: 'Started Build', channel: 'build-status', color: '#00ff00', token: 'G4RX8a36M699Ws964k2oQHQj', baseUrl: 'https://testiranje-raf.slack.com/services/hooks/jenkins-ci/')
+          }
+        }
       }
     }
     stage('Test') {
-      parallel {
-        stage('Test') {
-          steps {
-            sh '''ls -a
+      steps {
+        sh '''ls -a
 
 npm test
 
 npm run lint:ci'''
-          }
-        }
-        stage('tests failed') {
-          steps {
-            catchError() {
-              slackSend(message: 'Tests and lint Failed', color: '#ff0000', channel: 'build-status', token: 'G4RX8a36M699Ws964k2oQHQj', baseUrl: 'https://testiranje-raf.slack.com/services/hooks/jenkins-ci/')
-            }
-            
-          }
-        }
       }
     }
     stage('Post') {
