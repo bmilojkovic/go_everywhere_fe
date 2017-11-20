@@ -46,6 +46,7 @@ npm install'''
 npm test
 
 npm run lint:ci'''
+        slackSend(message: 'Test Report', attachments: 'reports/coverage.index.html', token: 'G4RX8a36M699Ws964k2oQHQj', baseUrl: 'https://testiranje-raf.slack.com/services/hooks/jenkins-ci/', channel: 'build-status', color: '#0000ff')
       }
     }
     stage('Post') {
