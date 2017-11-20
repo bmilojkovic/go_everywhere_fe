@@ -11,7 +11,8 @@ module.exports = function(config) {
       require('karma-phantomjs-launcher'),
       require('karma-junit-reporter'),
       require('karma-coverage-istanbul-reporter'),
-      require('@angular/cli/plugins/karma')
+      require('@angular/cli/plugins/karma'),
+      require('karma-html-reporter'),
     ],
     client: {
       clearContext: false, // leave Jasmine Spec Runner output visible in browser
@@ -28,10 +29,19 @@ module.exports = function(config) {
       dir: './reports/coverage',
       fixWebpackSourcePaths: true
     },
+    htmlReporter: {
+      outputDir: 'reports/karma_html', // where to put the reports
+      templatePath: null, // set if you moved jasmine_template.html
+      focusOnFailures: true, // reports show failures on start
+      namedFiles: false, // name files instead of creating sub-directories
+      pageTitle: null, // page title for reports; browser info by default
+      urlFriendlyName: false, // simply replaces spaces with _ for files/dirs
+      reportName: 'tests', // report summary filename; browser info by default
+    },
     angularCli: {
       environment: 'dev'
     },
-    reporters: ['progress', 'junit'],
+    reporters: ['progress', 'junit', 'html'],
     port: 9876,
     colors: true,
     // Level of logging, can be: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
