@@ -16,6 +16,7 @@ import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
 import { LobbyModule } from './lobby/lobby.module';
 import { GameModule } from "./game/game.module";
+import {TutorialModule} from './tutorial/tutorial.module';
 
 @NgModule({
   imports: [
@@ -32,6 +33,7 @@ import { GameModule } from "./game/game.module";
     GameModule,
     RegisterModule,
     LobbyModule,
+    TutorialModule,
     AppRoutingModule
   ],
   declarations: [AppComponent],
