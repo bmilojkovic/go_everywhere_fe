@@ -10,6 +10,7 @@ import {ExampleComponent} from './example/example.component';
 const routes: Routes = Route.withShell([
   { path: 'tutorial', component: TutorialComponent, data: { title: extract('Tutorial') }, children: [
     {path: '', component: IntroductionComponent, pathMatch: 'full', outlet: 'tutorialOutlet'},
+    {path: 'introduction', component: IntroductionComponent, outlet: 'tutorialOutlet'},
     {path: 'example', component: ExampleComponent, outlet: 'tutorialOutlet'}
   ] },
 ]);

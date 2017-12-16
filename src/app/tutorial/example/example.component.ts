@@ -43,9 +43,7 @@ export class ExampleComponent implements OnInit {
   }
 
   next() {
-    console.log(this.nextLesson);
-    console.log(this.nextStage);
-    this.router.navigate([this.nextLesson, {level: this.nextStage}] );
+    this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': [this.nextLesson, {level: this.nextStage}]}}]);
   }
 
 }
