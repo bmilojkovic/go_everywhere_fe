@@ -1,0 +1,31 @@
+{
+  "capture-stones":{
+    "0": {"ImageUrl": "assets/tutorial-images/capture1.png", "ImageDescription": "With one more move, the white stone will be completely surrounded and will be removed.Stones that can be removed with one more move are said to be in \"Atari\"."},
+    "1": {"ImageUrl": "assets/tutorial-images/capture2.png", "ImageDescription": "The white stone is now surrounded. Therefore..."},
+    "2": {"ImageUrl": "assets/tutorial-images/capture3.png", "ImageDescription": "... it is removed from the board. "},
+    "3": {"ImageUrl": "assets/tutorial-images/capture4.png", "ImageDescription": "If it were white's turn, it could \"escape\" by connecting another stone. "},
+    "Text": "The objective of Go is to make your \"territory\" larger than that of your opponent. At first, you may be confused about where to place your tones because you can play almost anywhere on the board. One way to make territory is to \"capture\" opponent's stones.Stones that are surrounded are removed from the board and are handed to the opponent as prisoners. Each prisoner will be worth one point. ",
+    "Title": "The Goal of Go",
+    "Subtitle": "How To Capture Stones",
+    "NextLesson": "capture",
+    "NextStage": "50kyu"
+  },
+  "illegal-moves":{
+    "0": {"ImageUrl": "assets/tutorial-images/table1.png", "ImageDescription": "Black can't make a move at A. (White can.).Because, if black played there, that stone would be already surrounded. Such suicide behavior is forbidden"},
+    "1": {"ImageUrl": "assets/tutorial-images/table2.png", "ImageDescription": "However, black can play on B. With a black stone on B, the two white stones nearby will be surrounded and be removed.(See figure below.)"},
+    "2": {"ImageUrl": "assets/tutorial-images/table3.png", "ImageDescription": ""},
+    "Text": "You can play almost anywhere on the board. However, there are some places where the rules say can't play.",
+    "Title": "Illegal Moves",
+    "Subtitle": "",
+    "NextLesson": "capture",
+    "NextStage": "50kyu"
+  },
+  "beginning":{
+    "0": {"ImageUrl": "assets/beginning.gif", "ImageDescription": "As shown above, the 4 areas near the coner of the board is called \"corners\" and the area between the two corners are \"sides\" and the center is \"middle\". There are no distinct borders between these areas and we are just using these names for convenience. From which area do you want to start to move?"},
+    "Text": "By now you may already understand how to capture stones. However, in the beginning of a real game, you have to play on a board with nothing on it.First, please take a look at the vast 19x19 board and see how we divide it into areas and how we refer to each one..",
+    "Title": "How to get started?",
+    "Subtitle": "",
+    "NextLesson": "capture",
+    "NextStage": "50kyu"
+  }
+}

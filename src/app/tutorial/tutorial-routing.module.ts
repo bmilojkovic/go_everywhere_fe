@@ -5,10 +5,12 @@ import { Route } from '../core/route.service';
 import { extract } from '../core/i18n.service';
 import {TutorialComponent} from './tutorial.component';
 import {IntroductionComponent} from './introduction/introduction.component';
+import {ExampleComponent} from './example/example.component';
 
 const routes: Routes = Route.withShell([
   { path: 'tutorial', component: TutorialComponent, data: { title: extract('Tutorial') }, children: [
-    {path: '', component: IntroductionComponent, pathMatch: 'full'},
+    {path: '', component: IntroductionComponent, pathMatch: 'full', outlet: 'tutorialOutlet'},
+    {path: 'example', component: ExampleComponent, outlet: 'tutorialOutlet'}
   ] },
 ]);
 

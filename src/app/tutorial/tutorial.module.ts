@@ -10,6 +10,8 @@ import {ContentComponent} from './content/content.component';
 import {RouterModule, Routes} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {IntroductionComponent} from './introduction/introduction.component';
+import {LoaderService} from './loader.service';
+import {ExampleComponent} from './example/example.component';
 
 const appRoutes: Routes = [
   {path: '', component: IntroductionComponent, pathMatch: 'full'},
@@ -29,7 +31,7 @@ const appRoutes: Routes = [
     HttpClientModule
   ],
   exports: [],
-  declarations: [TutorialComponent, ContentComponent, IntroductionComponent],
-  providers: []
+  declarations: [TutorialComponent, ContentComponent, IntroductionComponent, ExampleComponent],
+  providers: [LoaderService]
 })
 export class TutorialModule { }

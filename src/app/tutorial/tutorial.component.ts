@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LoaderService} from './loader.service';
 
 @Component({
   selector: 'app-tutorial',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TutorialComponent implements OnInit {
 
-  constructor() { }
+  constructor(private loaderService: LoaderService) { }
 
   ngOnInit() {
+    this.loaderService.getPageContent();
   }
 
 }

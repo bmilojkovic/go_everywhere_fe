@@ -1,0 +1,22 @@
+<h3 class="text-center">{{title}}</h3>
+<p id="text">{{text}}</p>
+<h3 class="text-center">{{subtitle}}</h3>
+
+<ul>
+  <li id="listComponent" *ngFor="let image of imageObjects ">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="img-responsive" id="image" src="{{image.url}}">
+        </div>
+        <div class="col-sm-8">
+          <p> {{image.description}}</p>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<div class="col-sm-12 text-center">
+  <button (click)="next()" id="nextBtn" class="btn btn-success">Continue to next lesson</button>
+</div>

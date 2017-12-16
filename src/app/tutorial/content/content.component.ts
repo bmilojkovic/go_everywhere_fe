@@ -13,8 +13,8 @@ export class ContentComponent implements OnInit {
 
   ngOnInit() {}
 
-  change(path: String, stage: String) {
-    this.router.navigate([path, {level: stage}] );
+  change(path: any, stage: any) {
+    this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': [path,  {level: stage}]}}] );
   }
   toggle(event: any) {
     $('#' + event.target.id + 'List').slideToggle();
