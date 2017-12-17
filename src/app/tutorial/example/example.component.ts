@@ -12,6 +12,8 @@ export class ExampleComponent implements OnInit {
   content: any[];
   title;
   text;
+  postText;
+  postTextTitle;
   subtitle;
   nextLesson;
   nextStage;
@@ -31,6 +33,8 @@ export class ExampleComponent implements OnInit {
     this.title = this.content['Title'];
     this.text = this.content['Text'];
     this.subtitle = this.content['Subtitle'];
+    this.postText = this.content['PostText'];
+    this.postTextTitle = this.content['PostTextTitle'];
     this.nextLesson = this.content['NextLesson'];
     this.nextStage = this.content['NextStage'];
     this.imageObjects = [];
