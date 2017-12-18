@@ -22,19 +22,20 @@
     "Title": "Illegal Moves",
     "Subtitle": "",
     "NextLesson": "capture",
-    "NextStage": "50kyu"
+    "NextStage": "46kyu"
   },
   "beginning":{
-    "0": {"ImageUrl": "assets/", "ImageDescription": "As shown above, the 4 areas near the coner of the board is called \"corners\" and the area between the two corners are \"sides\" and the center is \"middle\". There are no distinct borders between these areas and we are just using these names for convenience. From which area do you want to start to move?"},
+    "0": {"ImageUrl": "assets/tutorial-images/beginning.gif", "ImageDescription": "As shown above, the 4 areas near the coner of the board is called \"corners\" and the area between the two corners are \"sides\" and the center is \"middle\". There are no distinct borders between these areas and we are just using these names for convenience. From which area do you want to start to move?"},
     "1": {"ImageUrl": "assets/", "ImageDescription": "The object of Go is to claim as much territory as possible. In the beginning you have to try to surround territories i.e. empty spaces.\n In the figure on the left, there are two black groups: one on the upper left corner and the one on the right side.\n Each encloses 9 spaces, or 9 points.\n A white group in the middle also has 9 points. These spaces completely surrounded by stones of the same color are called territories.\n Now, the above three groups each have a territory of 9 points. Count the number of stones needed to surround the territory.\n\n Corner - 6 stones\n Side - 9 stones\n Middle - 12 stones\n  \n Therefore, it is most efficient to surround territories in the corners, while territories on the middle are least efficient. Thus, in the beginning of a game, each side will try to claim the corners of a board. You hardly ever see plays in the middle"},
-    "2": {"ImageUrl": "assets/", "ImageDescription": "This is a real game played by two professional players. Please observe how the game proceeds by pressing the Next button. Only the first 20 moves will be shown."},
+    "2": {"ImageUrl": "assets/", "ImageDescription": "This is a real game played by two professional players. Please observe how the game proceeds by pressing the Next button. Only the first 20 moves will be shown. You can see the first 4 moves are played around the 4 corners and then play expands to the sides. This game starts very calmly without any clashes between stones. With the 20 moves played, what is the \"balance of power\" like?"},
+    "3": {"ImageUrl": "assets/tutorial-images/fuseki.gif","ImageDescription": "The black shaded area represents where black is strong and white shaded area is where white has bigger influence. Therefore, all corners and sides loosely belong to either black or white. However, it's still not definitely decided - there can be an \"invasion\" at any time. If you try to claim corners and sides just because they are easy to get, you will probably make it harder to advance toward the middle. And if you don't have your stones in the middle at all, it will be a big disadvantage once a fight is started because the stones in the middle can have an influence to every direction - which is really helpful. These strategies in the opening game is called \"Fuseki\"."},
     "Text": "By now you may already understand how to capture stones. However, in the beginning of a real game, you have to play on a board with nothing on it.First, please take a look at the vast 19x19 board and see how we divide it into areas and how we refer to each one..",
     "PostText": "",
     "PostTextTitle": "",
     "Title": "How to get started?",
     "Subtitle": "",
     "NextLesson": "capture",
-    "NextStage": "50kyu"
+    "NextStage": "36kyu"
   },
   "end-game":{
     "0": {"ImageUrl": "assets/tutorial-images/theend1.png", "ImageDescription": "Both sides made 5 moves each and the game is considered to be finished. Black has 5 points on the left and white has 10 points on the right. Thus white wins by 5 points. You can count the places as territories where a vertical and a horizontal line meet. Corners and edges are also included. Remember that stones are not counted as territories. "},
@@ -59,7 +60,7 @@
     "Title": "End game - Part 2",
     "Subtitle": "",
     "NextLesson": "capture",
-    "NextStage": "cutting-stones"
+    "NextStage": "cs"
   },
   "one-point-jump":{
     "0": {"ImageUrl": "assets/tutorial-images/otj1.png", "ImageDescription": "This move (D5) is called One Point Jump( or Ikken tobi). The jumping move to D5 is almost connected to D3. Thus, such move can be used in many ways like attacking, defending, or escaping. Another Go proverb: No One Point Jump is a bad move. Just make a One Point Jump if you have no idea where to play. "},

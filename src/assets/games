@@ -1,0 +1,19 @@
+{
+  "game-examples": {
+    "0": {
+      "GameUrl": "assets/tutorial-images/capture1.png",
+      "ImageDescription": " This is a sample game on a 9x9 board. At the end, black gained 28 points and white occupied 24 points. However, as you can see the dead stones counts: one white stone was captured thus white's territories are decreased by 1 point. Thus, black won by 5 points. In this game, black controlled the left side and white occupies the right from the beginning and the game finished peacefully. You could consider that Go is a sharing game."
+    },
+    "1": {
+      "GameUrl": "assets/tutorial-images/capture2.png",
+      "ImageDescription": "The next game is more exciting!  Just don't mind if you can't understand what is happening. In the first game, both sides just tried to surround vacant spaces by sharing territories with each other. In this game, starting from the white's fourth move - the cut - , both tried to capture opponent's stones. Finally, black occupied on the upper right and the lower left, and white obtained the lower right and the upper left corners. White has 18 points and black has 14 points. In addition, black captured 2 white stones while white killed 7 black stones. Please notice that the 2 black stones on the upper left were dead as they are because they have nowhere to escape and will eventually be dead. White doesn't have to bother to take the two stones by playing C9. However, when the game finishes white can take them out from the board and add to the dead stones. The result is: Black: 14 - 7 = 7 points White: 18 - 2 = 16 points Thus white won by 9 points."
+    },
+    "Text": "On the board below, you can observe a real game progressing from the first move to the end. By clicking on the Next button, you can advance a move with an explanation. Keep on clicking until it stops advancing.",
+    "PostText": "",
+    "PostTextTitle": "",
+    "Title": "The flow of a game",
+    "Subtitle": "How To Capture Stones",
+    "NextLesson": "",
+    "NextStage": "komi"
+  }
+}
