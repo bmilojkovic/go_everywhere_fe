@@ -1,7 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 
 import * as WGo from 'wgo';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {LevelService} from '../level.service';
 declare var $: any;
 
@@ -29,7 +29,7 @@ export class CaptureComponent implements OnInit {
 
 
 
-  constructor(private route: ActivatedRoute, private levelService: LevelService) {}
+  constructor(private route: ActivatedRoute, private levelService: LevelService, private router: Router) {}
 
   ngOnInit() {
     this.levelService.initBoard();
@@ -194,6 +194,10 @@ export class CaptureComponent implements OnInit {
     this.visible = false;
     this.check = false;
     this.initBoard();
+  }
+
+  next() {
+    //this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': [this.nextLesson, {level: this.nextStage}]}}]);
   }
 
 }

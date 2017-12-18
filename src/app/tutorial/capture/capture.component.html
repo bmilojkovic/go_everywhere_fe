@@ -3,7 +3,9 @@
 <p>{{description}}</p>
 <div class="row">
   <div id="control">
-    <button (click)="resetBoard()" id="resetBtn" class="btn btn-primary">Reset Board</button>
+      <button (click)="previousLevel()" id="backBtn" class="btn">BACK</button>
+      <button (click)="resetBoard()" id="resetBtn" class="btn btn-primary">Reset Board</button>
+      <button (click)="nextLevel()" id="nextBtn" class="btn btn-success">NEXT</button>
   </div>
 </div>
 
@@ -20,15 +22,6 @@
 >
   <strong>{{ message }}</strong>
 </div>
-
-<div class="row">
-  <div class="col-sm-6 text-right">
-    <button (click)="previousLevel()" id="backBtn" class="btn">BACK</button>
-  </div>
-  <div class="col-sm-6">
-    <button (click)="nextLevel()" id="nextBtn" class="btn btn-success">NEXT</button>
-  </div>
-</div>
-<div class="row text-center">
-  <span class="col-sm-12 badge" id="level">{{currentStep + 1}} </span>
+<div class="col-sm-12 text-center">
+  <button (click)="next()" id="nextLessonBtn" class="btn btn-success">Continue to next lesson</button>
 </div>

@@ -18,7 +18,9 @@
       {"description": "Black's turn. Even if there are other stones nearby, just do the same."}
     ],
     "Text": "Capture Opponent's Atari stones! \n You can click on the board and take the opponent's stones. If you see the word failed, just \"retry\" until you get the success message below the board. Here, a 9 x 9 board is used. Normally, a 19 x 19 board is used. The smaller board is recommended for beginners. ",
-    "Title": "50 Kyu Problems"
+    "Title": "50 Kyu Problems",
+    "NextLesson": "capture",
+    "NextStage": "49kyu"
   },
   "49kyu":{
     "0":[
