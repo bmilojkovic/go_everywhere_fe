@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {LoaderService} from './loader.service';
+import {LevelService} from './level.service';
 
 @Component({
   selector: 'app-tutorial',
@@ -8,10 +9,11 @@ import {LoaderService} from './loader.service';
 })
 export class TutorialComponent implements OnInit {
 
-  constructor(private loaderService: LoaderService) { }
+  constructor(private loaderService: LoaderService, private levelService: LevelService) { }
 
   ngOnInit() {
     this.loaderService.getPageContent();
+    this.levelService.getJSON();
   }
 
 }

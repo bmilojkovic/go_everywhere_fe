@@ -1,0 +1,276 @@
+{
+  "50kyu":{
+    "0":[
+      {"x": 4, "y": 3, "c": 1}, {"x": 3, "y": 4, "c": 1}, {"x": 4, "y": 5, "c": 1}, {"x": 4, "y": 4, "c": -1},
+      {"service" : [{"x": 5, "y": 4, "c": -1, "f": 1}]},
+      {"description": "Black's turn. Capture the white stone in atari."}
+    ],
+    "1":[
+      {"x": 3, "y": 1, "c": 1}, {"x": 3, "y": 2, "c": -1}, {"x": 3, "y": 3, "c": -1}, {"x": 3, "y": 4, "c": 1},
+      {"x": 2, "y": 2, "c": 1}, {"x": 2, "y": 3, "c": 1}, {"x": 4, "y": 2, "c": 1},
+      {"service" : [{"x": 4, "y": 3, "c": -1, "f": 1}]},
+      {"description": "Black's turn. Two white stones are in atari. Capture them with one move!"}
+    ],
+    "2":[
+      {"x": 3, "y": 2, "c": -1}, {"x": 3, "y": 3, "c": 1}, {"x": 3, "y": 4, "c": -1}, {"x": 3, "y": 5, "c": 1},
+      {"x": 4, "y": 5, "c": -1}, {"x": 2, "y": 3, "c": -1}, {"x": 2, "y": 4, "c": 1}, {"x": 1, "y": 3, "c": -1},
+      {"service" : [{"x": 4, "y": 3, "c": -1, "f": 1}, {"x": 4, "y": 4, "c": -1, "f": 1}]},
+      {"description": "Black's turn. Even if there are other stones nearby, just do the same."}
+    ],
+    "Text": "Capture Opponent's Atari stones! \n You can click on the board and take the opponent's stones. If you see the word failed, just \"retry\" until you get the success message below the board. Here, a 9 x 9 board is used. Normally, a 19 x 19 board is used. The smaller board is recommended for beginners. ",
+    "Title": "50 Kyu Problems"
+  },
+  "49kyu":{
+    "0":[
+      {"x": 2, "y": 0, "c": 1}, {"x": 3, "y": 0, "c": -1}, {"x": 4, "y": 0, "c": -1}, {"x": 6, "y": 0, "c": -1},
+      {"x": 3, "y": 1, "c": 1}, {"x": 4, "y": 1, "c": 1}, {"x": 6, "y": 1, "c": -1},
+      {"service" : [{"x": 5, "y": 0, "c": -1, "f": 1}]},
+      {"description": "Black's turn. At the edge of the board, the situation is a little different. Stones stuck at the edges are almost surrounded. - and therefore easier to get rid of. "}
+    ],
+    "1":[
+      {"x": 6, "y": 0, "c": 1}, {"x": 7, "y": 0, "c": 1}, {"x": 8, "y": 0, "c": -1}, {"x": 6, "y": 1, "c": 1},
+      {"x": 6, "y": 2, "c": 1}, {"x": 7, "y": 2, "c": -1}, {"x": 8, "y": 2, "c": -1}, {"x": 7, "y": 3, "c": -1},
+      {"service" : [{"x": 8, "y": 1, "c": -1, "f": 1}]},
+      {"description": "A stone in the corner is in Atari."}
+    ],
+    "2":[
+      {"x": 3, "y": 2, "c": 1}, {"x": 2, "y": 3, "c": 1}, {"x": 3, "y": 3, "c": -1}, {"x": 5, "y": 3, "c": -1},
+      {"x": 2, "y": 4, "c": 1}, {"x": 3, "y": 4, "c": -1}, {"x": 4, "y": 4, "c": 1}, {"x": 3, "y": 5, "c": 1},
+      {"x": 3, "y": 6, "c": -1},
+      {"service" : [{"x": 4, "y": 3, "c": -1, "f": 1}]},
+      {"description": "Now, two white stones are in Atari."}
+    ],
+    "Text": "A bit more difficult",
+    "Title": "49 Kyu Problems"
+  },
+  "48kyu":{
+    "0":[
+      {"x": 3, "y": 2, "c": 1}, {"x": 2, "y": 3, "c": 1}, {"x": 2, "y": 4, "c": 1}, {"x": 2, "y": 5, "c": 1},
+      {"x": 4, "y": 5, "c": 1},{"x": 3, "y": 6, "c": 1},{"x": 3, "y": 3, "c": -1},
+      {"x": 3, "y": 4, "c": -1},{"x": 3, "y": 5, "c": -1},{"x": 5, "y": 3, "c": -1},{"x": 5, "y": 5, "c": -1},
+      {"service" : [{"x": 4, "y": 3, "c": -1, "f": 1}, {"x": 4, "y": 4, "c": -1, "f": -1}, {"x": 4, "y": 2, "c": -1, "f": 1}]},
+      {"description": "Get rid of the three white stones! It takes two moves to do that. However, the first move is important."}
+    ],
+    "1":[
+      {"x": 1, "y": 4, "c": 1}, {"x": 0, "y": 5, "c": 1}, {"x": 0, "y": 3, "c": -1}, {"x": 0, "y": 4, "c": -1},
+      {"x": 2, "y": 0, "c": -1}, {"x": 2, "y": 1, "c": -1}, {"x": 2, "y": 2, "c": -1},{"x": 2, "y": 3, "c": -1},
+      {"service" : [
+        {"x": 1, "y": 3, "c": -1, "f": 1}, {"x": 0, "y": 2, "c": -1, "f": -1}, {"x": 1, "y": 2, "c": -1, "f": 1},
+        {"x": 0, "y": 1, "c": -1, "f": -1}, {"x": 1, "y": 1, "c": -1, "f": 1}, {"x": 0, "y": 0, "c": -1, "f": -1},
+        {"x": 1, "y": 0, "c": -1, "f": 1}
+      ]},
+      {"description": "Try to capture two white stones on the left edge. It is hard to \"run away\" with stones on the edge."}
+    ],
+    "2":[
+      {"x": 2, "y": 1, "c": -1}, {"x": 3, "y": 1, "c": 1}, {"x": 4, "y": 1, "c": -1}, {"x": 5, "y": 1, "c": 1},
+      {"x": 2, "y": 2, "c": 1}, {"x": 3, "y": 2, "c": -1}, {"x": 4, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": 1},
+      {"x": 1, "y": 3, "c": 1}, {"x": 2, "y": 3, "c": -1}, {"x": 3, "y": 3, "c": -1}, {"x": 4, "y": 3, "c": 1},
+      {"x": 5, "y": 3, "c": -1},{"x": 6, "y": 3, "c": 1},{"x": 7, "y": 3, "c": 1},
+      {"x": 1, "y": 4, "c": -1}, {"x": 2, "y": 4, "c": 1}, {"x": 3, "y": 4, "c": 1}, {"x": 4, "y": 4, "c": 1},
+      {"x": 5, "y": 4, "c": -1},{"x": 6, "y": 4, "c": -1},{"x": 7, "y": 4, "c": -1},
+      {"x": 2, "y": 5, "c": -1},{"x": 4, "y": 5, "c": -1},{"x": 5, "y": 5, "c": 1},{"x": 6, "y": 5, "c": 1},
+      {"x": 5, "y": 6, "c": -1},{"x": 6, "y": 6, "c": 1},{"x": 5, "y": 7, "c": -1},{"x": 6, "y": 7, "c": 1},
+      {"service" : [{"x": 3, "y": 5, "c": -1, "f": 1}, {"x": 3, "y": 6, "c": -1, "f": 1}]},
+      {"description": "So many stones! Just be careful which stones are in Atari. If you make a wrong move, your stones will be killed instead."}
+    ],
+    "Text": "Capture anyway! \n From now on, you can't always get success with only one move. Keep playing until you see the message success or failed. ",
+    "Title": "48 Kyu Problems"
+  },
+
+  "47kyu":{
+    "0":[
+      {"x": 4, "y": 1, "c": 1}, {"x": 5, "y": 1, "c": -1}, {"x": 2, "y": 2, "c": 1},
+      {"x": 3, "y": 2, "c": 1}, {"x": 4, "y": 2, "c": -1}, {"x": 2, "y": 3, "c": 1},
+      {"x": 3, "y": 3, "c": -1}, {"x": 1, "y": 4, "c": -1}, {"x": 2, "y": 4, "c": -1},
+      {"service" : [{"x": 4, "y": 3, "c": -1, "f": 1}, {"x": 5, "y": 2, "c": -1, "f": -1}, {"x": 3, "y": 4, "c": -1, "f": 1}]},
+      {"description": "In certain positions, black can make two simultaneous Ataris for white. Because white can't save both, black can get at least one white stone. This is called Double Ataris."}
+    ],
+    "1":[
+      {"x": 3, "y": 1, "c": 1}, {"x": 4, "y": 1, "c": 1}, {"x": 2, "y": 2, "c": 1}, {"x": 3, "y": 2, "c": -1},
+      {"x": 4, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": 1}, {"x": 1, "y": 3, "c": 1}, {"x": 2, "y": 3, "c": -1},
+      {"x": 5, "y": 3, "c": -1}, {"x": 1, "y": 4, "c": 1}, {"x": 2, "y": 4, "c": -1}, {"x": 4, "y": 4, "c": -1},
+      {"x": 2, "y": 5, "c": 1}, {"x": 3, "y": 5, "c": -1},
+      {"service" : [{"x": 3, "y": 3, "c": -1, "f": 1}, {"x": 3, "y": 4, "c": -1, "f": -1}, {"x": 4, "y": 3, "c": -1, "f": 1}]},
+      {"description": "Where can you make double Ataris?"}
+    ],
+    "Text": "Double Ataris",
+    "Title": "47 Kyu Problems"
+  },
+
+  "46kyu":{
+    "0":[
+      {"x": 4, "y": 0, "c": -1}, {"x": 3, "y": 1, "c": 1}, {"x": 4, "y": 1, "c": -1},
+      {"x": 5, "y": 1, "c": 1}, {"x": 2, "y": 2, "c": 1}, {"x": 3, "y": 2, "c": -1},
+      {"x": 5, "y": 2, "c": -1}, {"x": 6, "y": 2, "c": -1}, {"x": 2, "y": 3, "c": 1},
+      {"x": 3, "y": 3, "c": -1}, {"x": 4, "y": 3, "c": -1}, {"x": 5, "y": 3, "c": 1},
+      {"x": 3, "y": 4, "c": 1}, {"x": 4, "y": 4  , "c": 1},
+      {"service" : [{"x": 4, "y": 2, "c": -1, "f": 1}]},
+      {"description": "Black's turn. At first glance, it seems it's an illegal move..."}
+    ],
+    "1":[
+      {"x": 1, "y": 0, "c": -1}, {"x": 2, "y": 0, "c": -1}, {"x": 3, "y": 0, "c": -1}, {"x": 4, "y": 0, "c": 1},
+      {"x": 0, "y": 1, "c": -1}, {"x": 1, "y": 1, "c": -1}, {"x": 2, "y": 1, "c": -1}, {"x": 3, "y": 1, "c": -1},
+      {"x": 4, "y": 1, "c": 1}, {"x": 0, "y": 2, "c": 1}, {"x": 1, "y": 2, "c": 1}, {"x": 2, "y": 2, "c": 1},
+      {"x": 3, "y": 2, "c": 1},{"x": 4, "y": 2, "c": -1},
+      {"x": 0, "y": 3, "c": -1}, {"x": 2, "y": 3, "c": -1}, {"x": 3, "y": 3, "c": -1},
+      {"service" : [{"x": 1, "y": 3, "c": -1, "f": 1}, {"x": 1, "y": 4, "c": -1, "f": 1}]},
+      {"description": "4 black stones are in danger! Kill the white stones before being killed!"}
+    ],
+    "2":[
+      {"x": 4, "y": 1, "c": -1}, {"x": 3, "y": 2, "c": -1}, {"x": 1, "y": 3, "c": -1}, {"x": 5, "y": 3, "c": 1},
+      {"x": 2, "y": 4, "c": 1}, {"x": 3, "y": 4, "c": -1}, {"x": 4, "y": 4, "c": -1}, {"x": 5, "y": 4, "c": 1},
+      {"x": 3, "y": 5, "c": 1}, {"x": 4, "y": 5, "c": 1},
+      {"service" : [{"x": 3, "y": 3, "c": -1, "f": 1}, {"x": 4, "y": 3, "c": -1, "f": -1}, {"x": 4, "y": 2, "c": -1, "f": 1}]},
+      {"description": "Capture the 2 white stones touching the black ones. Here, you can't capture white with one move."}
+    ],
+    "3":[
+      {"x": 1, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": -1}, {"x": 2, "y": 3, "c": 1}, {"x": 2, "y": 4, "c": 1},
+      {"x": 3, "y": 4, "c": -1}, {"x": 2, "y": 5, "c": -1}, {"x": 3, "y": 5, "c": 1}, {"x": 4, "y": 5, "c": 1},
+      {"x": 2, "y": 6, "c": -1}, {"x": 4, "y": 6, "c": -1},
+      {"service" : [
+        {"x": 4, "y": 3, "c": -1, "f": 1}, {"x": 3, "y": 3, "c": -1, "f": -1}, {"x": 3, "y": 2, "c": -1, "f": 1},
+        {"x": 4, "y": 4, "c": -1, "f": -1}, {"x": 5, "y": 4, "c": -1, "f": 1}, {"x": 4, "y": 3, "c": -1, "f": 1}
+      ]},
+      {"description": "If you can capture the white stone (D5) which is separating black stones, it will be an easy game.[Tip] Don't try to attack the enemy directly."}
+    ],
+    "Text": "Now, you can click on the board again. Why do we have to capture the opponent's stones? It is because by removing opponent's stones that are separating your stones, your divided stones can be all connected. This is very important aspect of Go. Just remember to play so that all your stones connect each other whenever you can.",
+    "Title": "46 Kyu Problems"
+  },
+  "36kyu":{
+    "0":[
+      {"x": 2, "y": 3, "c": -1}, {"x": 6, "y": 3, "c": 1}, {"x": 1, "y": 4, "c": -1},
+      {"x": 1, "y": 5, "c": 1}, {"x": 2, "y": 5, "c": -1}, {"x": 3, "y": 5, "c": -1},
+      {"x": 1, "y": 6, "c": 1}, {"x": 2, "y": 6, "c": 1}, {"x": 3, "y": 6, "c": -1},
+      {"x": 6, "y": 6, "c": 1}, {"x": 1, "y": 7, "c": 1}, {"x": 2, "y": 7, "c": -1},
+      {"service" : [
+        {"x": 3, "y": 7, "c": -1, "f": 1}, {"x": 4, "y": 7, "c": -1, "f": -1}, {"x": 3, "y": 8, "c": -1, "f": 1},
+        {"x": 4, "y": 8, "c": -1, "f": -1}, {"x": 2, "y": 8, "c": -1, "f": 1}
+      ]},
+      {"description": "Black is blocked in the bottom left corner. The group will be surrounded if you do nothing. The group will be secure if it can capture one of the surrounding white stones."}
+    ],
+    "1":[
+      {"x": 1, "y": 2, "c": -1}, {"x": 4, "y": 2, "c": -1}, {"x": 6, "y": 2, "c": -1}, {"x": 7, "y": 2, "c": -1},
+      {"x": 1, "y": 3, "c": 1}, {"x": 2, "y": 3, "c": -1}, {"x": 1, "y": 4, "c": 1}, {"x": 4, "y": 4, "c": 1},
+      {"x": 6, "y": 4, "c": 1}, {"x": 7, "y": 4, "c": 1}, {"x": 2, "y": 5, "c": 1}, {"x": 7, "y": 5, "c": -1},
+      {"x": 2, "y": 6, "c": 1}, {"x": 3, "y": 6, "c": -1}, {"x": 4, "y": 6, "c": -1}, {"x": 5, "y": 6, "c": -1},
+      {"x": 2, "y": 7, "c": 1}, {"x": 3, "y": 7, "c": -1}, {"x": 4, "y": 7, "c": 1}, {"x": 5, "y": 7, "c": 1},
+      {"x": 6, "y": 7, "c": -1}, {"x": 3, "y": 8, "c": 1},
+      {"service" : [
+        {"x": 4, "y": 8, "c": 1, "f": 1},
+        {"x": 5, "y": 8, "c": -1, "f": -1}, {"x": 6, "y": 8, "c": -1, "f": -1}, {"x": 4, "y": 8, "c": -1, "f": 1},
+        {"x": 2, "y": 8, "c": -1, "f": 1}
+      ]},
+      {"description": "Black is blocking white on the bottom right area. White doesn't yet have 2 eyes.Then white played G2. Look what happens if black answers at F1 ( or G1) before you find the right answer."}
+    ],
+    "Text": " ",
+    "Title": "36 Kyu Problems"
+  },
+  "cs":{
+    "0":[
+      {"x": 3, "y": 2, "c": 1}, {"x": 4, "y": 2, "c": -1}, {"x": 3, "y": 3, "c": 1},
+      {"x": 4, "y": 3, "c": -1}, {"x": 3, "y": 4, "c": 1}, {"x": 4, "y": 4, "c": -1},
+      {"x": 2, "y": 5, "c": 1}, {"x": 3, "y": 5, "c": -1}, {"x": 2, "y": 6, "c": 1},
+      {"x": 3, "y": 6, "c": -1},
+      {"service" : [{"x": 4, "y": 5, "c": -1, "f": 1}, {"x": 4, "y": 6, "c": -1, "f": -1}, {"x": 5, "y": 5, "c": -1, "f": 1}]},
+      {"description": "It looks as if white has the larger territory. However, her wall has a weak point. Just \"cut\" white's wall."}
+    ],
+    "1":[
+      {"x": 0, "y": 3, "c": 1}, {"x": 1, "y": 3, "c": 1}, {"x": 5, "y": 3, "c": 1}, {"x": 6, "y": 3, "c": 1},
+      {"x": 7, "y": 3, "c": 1}, {"x": 8, "y": 3, "c": 1}, {"x": 0, "y": 4, "c": -1}, {"x": 1, "y": 4, "c": -1},
+      {"x": 2, "y": 4, "c": 1}, {"x": 3, "y": 4, "c": 1}, {"x": 4, "y": 4, "c": 1}, {"x": 5, "y": 4, "c": 1},
+      {"x": 6, "y": 4, "c": -1}, {"x": 7, "y": 4, "c": -1}, {"x": 8, "y": 4, "c": -1}, {"x": 2, "y": 5, "c": -1},
+      {"x": 3, "y": 5, "c": -1}, {"x": 4, "y": 5, "c": -1}, {"x": 5, "y": 5, "c": -1}, {"x": 6, "y": 5, "c": -1},
+      {"service" : [
+        {"x": 1, "y": 5, "c": -1, "f": 1}, {"x": 1, "y": 6, "c": -1, "f": -1}, {"x": 0, "y": 5, "c": -1, "f": 1},
+        {"x": 2, "y": 8, "c": -1, "f": -1}
+      ]},
+      {"description": "Black has 30 points while white has 31 points. Thus it looks like white has a 1 point win. However, the territory on the lower side is not all white's. Just cut white's wall."}
+    ],
+    "Text": " ",
+    "Title": "Cutting stones"
+  },
+  "34kyu":{
+    "0":[
+      {"x": 3, "y": 4, "c": 1}, {"x": 2, "y": 5, "c": -1}, {"x": 4, "y": 5, "c": -1}, {"x": 3, "y": 6, "c": 1},
+      {"service" : [{"x": 3, "y": 5, "c": -1, "f": 1}]},
+      {"description": " "}
+    ],
+    "1":[
+      {"x": 4, "y": 5, "c": -1}, {"x": 2, "y": 6, "c": 1}, {"x": 3, "y": 6, "c": 1}, {"x": 4, "y": 6, "c": -1},
+      {"x": 5, "y": 6, "c": 1},
+      {"service" : [{"x": 4, "y": 7, "c": -1, "f": 1}]},
+      {"description": "White just played E3. How do you respond?"}
+    ],
+    "2":[
+      {"x": 4, "y": 5, "c": -1}, {"x": 2, "y": 6, "c": 1}, {"x": 3, "y": 6, "c": 1}, {"x": 4, "y": 6, "c": -1},
+      {"x": 5, "y": 6, "c": 1}, {"x": 4, "y": 7, "c": 1}, {"x": 5, "y": 7, "c": -1},
+      {"service" : [{"x": 6, "y": 7, "c": 1, "f": 1}, {"x": 3, "y": 7, "c": -1, "f": 1}, {"x": 6, "y": 6, "c": -1, "f": 1}]},
+      {"description": "Continuing from the above...   White cut you by playing F2. This is a reckless move. But how do you punish it?"}
+    ],
+    "Text": "Use your instinct!",
+    "Title": "34 Kyu Problems"
+  },
+  "35kyu":{
+    "0":[
+      {"x": 2, "y": 1, "c": 1}, {"x": 3, "y": 1, "c": -1}, {"x": 2, "y": 2, "c": 1}, {"x": 3, "y": 2, "c": -1},
+      {"x": 4, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": -1}, {"x": 1, "y": 3, "c": 1}, {"x": 3, "y": 3, "c": 1},
+      {"x": 6, "y": 3, "c": -1}, {"x": 4, "y": 4, "c": 1}, {"x": 6, "y": 4, "c": -1}, {"x": 2, "y": 6, "c": 1},
+      {"x": 4, "y": 6, "c": 1}, {"x": 6, "y": 6, "c": -1}, {"x": 6, "y": 7, "c": -1},
+      {"service" : [{"x": 5, "y": 7, "c": 1, "f": 1} ,{"x": 4, "y": 7, "c": -1, "f": 1}, {"x": 5, "y": 7, "c": -1, "f": 1}]},
+      {"description": "Black occupies left side and white controls the right. However, there are still a few places where the border is not clear. Where is the point that you can get the most profit?"}
+    ],
+
+    "1":[
+      {"x": 5, "y": 0, "c": 1}, {"x": 6, "y": 0, "c": -1}, {"x": 4, "y": 1, "c": 1}, {"x": 5, "y": 1, "c": 1},
+      {"x": 6, "y": 1, "c": -1}, {"x": 4, "y": 2, "c": 1}, {"x": 5, "y": 2, "c": -1}, {"x": 3, "y": 3, "c": 1},
+      {"x": 4, "y": 3, "c": 1}, {"x": 5, "y": 3, "c": -1}, {"x": 3, "y": 4, "c": 1}, {"x": 4, "y": 4, "c": -1},
+      {"x": 6, "y": 4, "c": -1}, {"x": 3, "y": 5, "c": 1}, {"x": 4, "y": 5, "c": -1}, {"x": 3, "y": 6, "c": 1},
+      {"x": 4, "y": 6, "c": -1}, {"x": 3, "y": 7, "c": 1}, {"x": 4, "y": 7, "c": -1}, {"x": 3, "y": 8, "c": -1},
+      {"service" : [
+        {"x": 2, "y": 8, "c": -1, "f": 1}, {"x": 4, "y": 8, "c": -1, "f": -1},
+        {"x": 2, "y": 7, "c": 1, "f": 1}, {"x": 1, "y": 7, "c": 1, "f": 1}, {"x": 2, "y": 6, "c": 1, "f": 1},
+        {"x": 2, "y": 7, "c": -1, "f": -1},
+        {"x": 1, "y": 8, "c": -1, "f": 1}, {"x": 1, "y": 8, "c": -1, "f": -1}, {"x": 1, "y": 7, "c": -1, "f": -1},
+        {"x": 0, "y": 8, "c": -1, "f": 1}, {"x": 0, "y": 7, "c": -1, "f": 1}, {"x": 0, "y": 6, "c": -1, "f": 1}
+      ]},
+      {"description": "Black has the left and white has the right. The game is almost over. But be careful until the very end! White just played at D1. If you ignore it, your precious territory will be ruined."}
+    ],
+    "Text": "Approaching end game ... As the game approaches the end, and both black and white's territories are settled, all you have to do is to decide the border lines clearly. At this stage, you must try to push the border toward the opponent's side, widening your territories as large as possible while reducing the opponent's.",
+    "Title": "35 Kyu Problems"
+  },
+  "SITF":{
+    "0":[
+      {"x": 1, "y": 2, "c": -1}, {"x": 2, "y": 2, "c": 1},
+      {"service" : [{"x": 1, "y": 1, "c": 1, "f": 1}, {"x": 1, "y": 3, "c": 1, "f": 1}, {"x": 1, "y": 1, "c": -1, "f": 1}]},
+      {"description": "Finally, it's time to practice.White has just touched your stone. There are two right answers. Find both of them!"}
+    ],
+
+    "Text": "Here, you will learn some practical techniques needed when you start a real game.",
+    "Title": "A Slap In The Face"
+  },
+  "EYS":{
+    "0":[
+      {"x": 5, "y": 5, "c": 1}, {"x": 6, "y": 5, "c": -1}, {"x": 5, "y": 6, "c": -1},
+      {"service" : [{"x": 4, "y": 5, "c": 1, "f": 1}, {"x": 5, "y": 4, "c": 1, "f": 1}, {"x": 4, "y": 5, "c": -1, "f": 1}]},
+      {"description": "Now practice. Extend your stone after touching and being slapped. There are two right answers. Find both of them!"}
+    ],
+
+    "Text": "",
+    "Title": "Extending your stone"
+  },
+  "DAW":{
+    "0":[
+      {"x": 0, "y": 0, "c": -1}, {"x": 4, "y": 0, "c": -1}, {"x": 5, "y": 0, "c": -1}, {"x": 0, "y": 3, "c": -1},
+      {"x": 1, "y": 3, "c": -1}, {"x": 2, "y": 3, "c": -1}, {"x": 6, "y": 3, "c": -1}, {"x": 6, "y": 2, "c": -1},
+      {"x": 6, "y": 4, "c": -1}, {"x": 4, "y": 5, "c": -1}, {"x": 2, "y": 6, "c": -1}, {"x": 3, "y": 6, "c": -1},
+      {"x": 4, "y": 6, "c": -1}, {"x": 8, "y": 7, "c": -1}, {"x": 7, "y": 8, "c": -1}, {"x": 8, "y": 8, "c": -1},
+      {"fail": "", "success": ""},
+      {"service" : []},
+      {"description": "On this board, only black can make moves. That is, the white player will never resist here. Capture all the white stones. However, do it with as few stones as possible."}
+    ],
+
+    "Text": "Take a break",
+    "Title": "Destroy all whites"
+  }
+
+}

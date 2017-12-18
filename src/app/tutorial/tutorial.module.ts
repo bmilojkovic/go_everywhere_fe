@@ -12,6 +12,10 @@ import {HttpClientModule} from '@angular/common/http';
 import {IntroductionComponent} from './introduction/introduction.component';
 import {LoaderService} from './loader.service';
 import {ExampleComponent} from './example/example.component';
+import {ReplayComponent} from './replay/replay.component';
+import {CaptureComponent} from './capture/capture.component';
+import {LevelService} from './level.service';
+import {DestroyComponent} from './capture/destroy.component';
 
 const appRoutes: Routes = [
   {path: '', component: IntroductionComponent, pathMatch: 'full'},
@@ -31,7 +35,8 @@ const appRoutes: Routes = [
     HttpClientModule
   ],
   exports: [],
-  declarations: [TutorialComponent, ContentComponent, IntroductionComponent, ExampleComponent],
-  providers: [LoaderService]
+  declarations: [TutorialComponent, ContentComponent, IntroductionComponent,
+    ExampleComponent, ReplayComponent, CaptureComponent, DestroyComponent],
+  providers: [LoaderService, LevelService]
 })
 export class TutorialModule { }
