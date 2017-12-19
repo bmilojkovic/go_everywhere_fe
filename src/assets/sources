@@ -22,7 +22,7 @@
     "Title": "Illegal Moves",
     "Subtitle": "",
     "NextLesson": "capture",
-    "NextStage": "50kyu"
+    "NextStage": "46kyu"
   },
   "beginning":{
     "0": {"ImageUrl": "assets/", "ImageDescription": "As shown above, the 4 areas near the coner of the board is called \"corners\" and the area between the two corners are \"sides\" and the center is \"middle\". There are no distinct borders between these areas and we are just using these names for convenience. From which area do you want to start to move?"},
@@ -34,7 +34,7 @@
     "Title": "How to get started?",
     "Subtitle": "",
     "NextLesson": "capture",
-    "NextStage": "50kyu"
+    "NextStage": "36kyu"
   },
   "end-game":{
     "0": {"ImageUrl": "assets/tutorial-images/theend1.png", "ImageDescription": "Both sides made 5 moves each and the game is considered to be finished. Black has 5 points on the left and white has 10 points on the right. Thus white wins by 5 points. You can count the places as territories where a vertical and a horizontal line meet. Corners and edges are also included. Remember that stones are not counted as territories. "},
@@ -59,7 +59,7 @@
     "Title": "End game - Part 2",
     "Subtitle": "",
     "NextLesson": "capture",
-    "NextStage": "cutting-stones"
+    "NextStage": "cs"
   },
   "one-point-jump":{
     "0": {"ImageUrl": "assets/tutorial-images/otj1.png", "ImageDescription": "This move (D5) is called One Point Jump( or Ikken tobi). The jumping move to D5 is almost connected to D3. Thus, such move can be used in many ways like attacking, defending, or escaping. Another Go proverb: No One Point Jump is a bad move. Just make a One Point Jump if you have no idea where to play. "},

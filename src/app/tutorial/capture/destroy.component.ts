@@ -1,7 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 
 import * as WGo from 'wgo';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {LevelService} from '../level.service';
 declare var $: any;
 
@@ -25,7 +25,10 @@ export class DestroyComponent implements OnInit {
   visible = false;
   message: String = '';
 
-  constructor(private route: ActivatedRoute, private levelService: LevelService) {}
+  nextLesson;
+  nextStage;
+
+  constructor(private route: ActivatedRoute, private levelService: LevelService, private router: Router) {}
 
   ngOnInit() {
     this.levelService.initBoard();
@@ -46,6 +49,8 @@ export class DestroyComponent implements OnInit {
     this.levels = this.levelService.jsonLevels[stage];
     this.text = this.levels['Text'];
     this.title = this.levels['Title'];
+    this.nextLesson = this.levels['NextLesson'];
+    this.nextStage = this.levels['NextStage'];
     this.currentStep = 0;
     this.initBoard();
   }
@@ -98,10 +103,13 @@ export class DestroyComponent implements OnInit {
           }
         }
 
-        $('#nextBtn').prop('disabled', false);
+        if (self.currentStep === 0) {
+          $('#nextBtn').prop('disabled', true);
+          self.message = 'Success! You are ready for NEXT LESSON.';
+
+        }
         self.isSuccessVisible = true;
         self.visible = true;
-        self.message = 'Success! You are ready for NEXT step.';
         return;
 
       }, 300);
@@ -133,6 +141,10 @@ export class DestroyComponent implements OnInit {
     this.gameMain.firstPosition();
     this.visible = false;
     this.initBoard();
+  }
+
+  next() {
+    this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': [this.nextLesson, {level: this.nextStage}]}}]);
   }
 
 }

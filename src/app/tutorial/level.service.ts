@@ -12,17 +12,11 @@ export class LevelService {
   jsonLevels;
   mainBoard: WGo;
   mainGame: WGo.Game;
-  scenario;
-
-  fail = false;
-  succes = false;
-  visible = true;
 
   constructor(private http: HttpClient) { }
 
   public getJSON() {
     this.http.get('assets/levels').subscribe(data => this.jsonLevels = data);
-
   }
 
   public initBoard() {
@@ -37,7 +31,6 @@ export class LevelService {
       },
       background: 'assets/tutorial-images/wood_512.jpg'
     });
-
 
     const coordinates = {
       // draw on grid layer
@@ -79,10 +72,5 @@ export class LevelService {
     this.mainGame = game;
   }
 
-  public initScenario(stage: any, currStep: any) {
-
-    this.scenario = this.jsonLevels[stage][currStep][this.jsonLevels[stage][currStep].length - 2]['service'];
-
-  }
 
 }
