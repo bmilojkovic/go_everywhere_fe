@@ -16,6 +16,11 @@ export class ContentComponent implements OnInit {
   change(path: any, stage: any) {
     this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': [path,  {level: stage}]}}] );
   }
+
+  comboChange(path: any, example: any, capture: any) {
+    this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': [path, {example: example, capture: capture}]}}]);
+  }
+
   toggle(event: any) {
     $('#' + event.target.id + 'List').slideToggle();
   }

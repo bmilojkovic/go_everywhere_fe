@@ -16,6 +16,7 @@ import {ReplayComponent} from './replay/replay.component';
 import {CaptureComponent} from './capture/capture.component';
 import {LevelService} from './level.service';
 import {DestroyComponent} from './capture/destroy.component';
+import {ComboComponent} from './combo/combo.component';
 
 const appRoutes: Routes = [
   {path: '', component: IntroductionComponent, pathMatch: 'full'},
@@ -36,7 +37,7 @@ const appRoutes: Routes = [
   ],
   exports: [],
   declarations: [TutorialComponent, ContentComponent, IntroductionComponent,
-    ExampleComponent, ReplayComponent, CaptureComponent, DestroyComponent],
+    ExampleComponent, ReplayComponent, CaptureComponent, DestroyComponent, ComboComponent],
   providers: [LoaderService, LevelService]
 })
 export class TutorialModule { }
