@@ -20,6 +20,7 @@ export class ComboComponent implements OnInit {
   subtitle;
   nextLesson;
   nextStage;
+  nextLevel;
   imageObjects: any[];
 
   boardMain: WGo.Board;
@@ -54,6 +55,7 @@ export class ComboComponent implements OnInit {
     this.postText = this.content['PostText'];
     this.postTextTitle = this.content['PostTextTitle'];
     this.nextLesson = this.content['NextLesson'];
+    this.nextLevel = this.content['NextLevel'];
     this.nextStage = this.content['NextStage'];
     this.imageObjects = [];
     for (const x in this.content) {
@@ -186,26 +188,9 @@ export class ComboComponent implements OnInit {
     this.initBoard();
   }
 
-  nextLevel() {
-    this.currentStep++;
-    this.boardMain.removeAllObjects();
-    this.gameMain.firstPosition();
-    this.visible = false;
-    this.check = false;
-    this.initBoard();
-  }
-
-  previousLevel() {
-    this.currentStep--;
-    this.boardMain.removeAllObjects();
-    this.gameMain.firstPosition();
-    this.visible = false;
-    this.check = false;
-    this.initBoard();
-  }
-
   next() {
-    this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': [this.nextLesson, {level: this.nextStage}]}}]);
+    this.router.navigate(['/tutorial', {
+      outlets: {'tutorialOutlet': [this.nextLesson, {example: this.nextStage, capture: this.nextLevel}]}}]);
   }
 
 }
