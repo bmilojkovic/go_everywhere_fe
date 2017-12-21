@@ -19,10 +19,10 @@ export class LevelService {
     this.http.get('assets/levels').subscribe(data => this.jsonLevels = data);
   }
 
-  public initBoard() {
+  public initBoard(size: Number, width: Number) {
     const mboard = new WGo.Board(document.getElementById('board'), {
-      width: 300,
-      size: 9,
+      width: width,
+      size: size,
       section: {
         top: -0.5,
         left: -0.5,
@@ -50,7 +50,7 @@ export class LevelService {
 
           for (let i = 0; i < board.size; i++) {
             ch = i + 'A'.charCodeAt(0);
-            if (ch >= 'I'.charCodeAt(0)) ch++;
+            if (ch >= 'I'.charCodeAt(0)) {ch++; }
 
             t = board.getY(i);
             this.fillText(board.size - i, xright, t);
@@ -67,7 +67,7 @@ export class LevelService {
     }
     mboard.addCustomObject(coordinates);
 
-    const game = new WGo.Game(9);
+    const game = new WGo.Game(size);
     this.mainBoard = mboard;
     this.mainGame = game;
   }

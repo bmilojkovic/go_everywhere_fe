@@ -31,7 +31,7 @@ export class DestroyComponent implements OnInit {
   constructor(private route: ActivatedRoute, private levelService: LevelService, private router: Router) {}
 
   ngOnInit() {
-    this.levelService.initBoard();
+    this.levelService.initBoard(9, 300);
     this.route.params.subscribe(param => {
       this.update(this.route.snapshot.params['level']);
     });

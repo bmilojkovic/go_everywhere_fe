@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
-
 import * as WGo from 'wgo';
 import {ActivatedRoute, Router} from '@angular/router';
 import {LevelService} from '../level.service';
 declare var $: any;
 
+
 @Component({
-  selector: 'app-defending',
-  templateUrl: './defending.component.html',
-  styleUrls: ['./defending.component.scss']
+  selector: 'app-handicap',
+  templateUrl: './handicap.component.html',
+  styleUrls: ['./handicap.component.scss']
 })
-export class DefendingComponent implements OnInit {
+export class HandicapComponent implements OnInit {
 
   boardMain: WGo.Board;
   gameMain: WGo.Game;
@@ -26,11 +26,10 @@ export class DefendingComponent implements OnInit {
   nextStage: any;
   numOfSteps;
 
-
   constructor(private route: ActivatedRoute, private levelService: LevelService, private router: Router) {}
 
   ngOnInit() {
-    this.levelService.initBoard(9, 300);
+    this.levelService.initBoard(19, 500);
     this.route.params.subscribe(param => {
       this.update(this.route.snapshot.params['level']);
     });
@@ -145,20 +144,18 @@ export class DefendingComponent implements OnInit {
 
     // Undo from game
     this.gameMain.popPosition();
-    let position = this.gameMain.getPosition();
-
-    position = this.gameMain.getPosition();
+    const position = this.gameMain.getPosition();
     if (position === this.initPosition) {
       $('#undoBtn').prop('disabled', true);
     }
 
 
-     // Undo from board
+    // Undo from board
     this.boardMain.removeAllObjects();
     this.color = !this.color;
     let k = 0;
-    for (let i = 0; i < 9; i++) {
-      for (let j = 0; j < 9; j++) {
+    for (let i = 0; i < 19; i++) {
+      for (let j = 0; j < 19; j++) {
         if (position['schema'][k] === 1) {
           this.boardMain.addObject({
             x: i,

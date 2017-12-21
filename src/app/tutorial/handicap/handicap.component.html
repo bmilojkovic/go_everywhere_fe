@@ -1,0 +1,28 @@
+<h4 class="text-center">{{title}}</h4>
+<p id="instructions">{{text}}</p>
+<p>{{description}}</p>
+
+<div class="row">
+  <div id="control">
+    <button (click)="previousLevel()" id="backBtn" class="btn">BACK</button>
+    <button (click)="resetBoard()" id="resetBtn" class="btn btn-primary">Reset Board</button>
+    <button (click)="nextLevel()" id="nextBtn" class="btn btn-success">NEXT</button>
+  </div>
+</div>
+
+<div class="row">
+  <div id="board"></div>
+</div>
+
+
+
+
+
+<div class="col-sm-12 text-center">
+  <button (click)="backToPastPosition()" id="undoBtn" class="btn btn-warning">Undo Move</button>
+</div>
+
+<div class="col-sm-12 text-center">
+  <button (click)="next()" id="nextLessonBtn" class="btn btn-success">Continue to next lesson</button>
+</div>
+
