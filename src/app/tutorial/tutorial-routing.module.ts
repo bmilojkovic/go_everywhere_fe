@@ -9,6 +9,7 @@ import {ExampleComponent} from './example/example.component';
 import {ReplayComponent} from './replay/replay.component';
 import {CaptureComponent} from './capture/capture.component';
 import {DestroyComponent} from './capture/destroy.component';
+import {DefendingComponent} from './defending/defending.component';
 
 const routes: Routes = Route.withShell([
   { path: 'tutorial', component: TutorialComponent, data: { title: extract('Tutorial') }, children: [
@@ -17,7 +18,8 @@ const routes: Routes = Route.withShell([
     {path: 'example', component: ExampleComponent, outlet: 'tutorialOutlet'},
     {path: 'replay', component: ReplayComponent, outlet: 'tutorialOutlet'},
     {path: 'capture', component: CaptureComponent, outlet: 'tutorialOutlet'},
-    {path: 'dest-all-whites', component: DestroyComponent, outlet: 'tutorialOutlet'}
+    {path: 'dest-all-whites', component: DestroyComponent, outlet: 'tutorialOutlet'},
+    {path: 'defending', component: DefendingComponent, outlet: 'tutorialOutlet'}
   ] },
 ]);
 

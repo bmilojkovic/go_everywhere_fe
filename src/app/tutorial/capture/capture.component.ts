@@ -72,7 +72,7 @@ export class CaptureComponent implements OnInit {
     this.success = this.levels[this.currentStep][this.levels[this.currentStep].length - 3]['success'];
     this.fail = this.levels[this.currentStep][this.levels[this.currentStep].length - 3]['fail'];
 
-    if(this.currentStep === 0){
+    if (this.currentStep === 0) {
       $('#backBtn').prop('disabled', true);
 
     }
@@ -130,7 +130,7 @@ export class CaptureComponent implements OnInit {
               if (self.stage[scen].f === 1){
                 self.visible = true;
                 self.isSuccessVisible = true;
-                if(self.currentStep === self.numOfSteps - 1) {
+                if (self.currentStep === self.numOfSteps - 1) {
                   $('#nextBtn').prop('disabled', true);
                   self.message = 'Success! ' + self.success + ' You are ready for NEXT LESSON.';
 

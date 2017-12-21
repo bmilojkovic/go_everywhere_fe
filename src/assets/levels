@@ -225,8 +225,8 @@
     ],
     "Text": " ",
     "Title": "Cutting stones",
-    "NextLesson": "capture",
-    "NextStage": "49kyu",
+    "NextLesson": "defending",
+    "NextStage": "def",
     "NumberOfSteps": 2
   },
   "34kyu":{
@@ -339,36 +339,31 @@
     "0":[
             {"x": 3, "y": 2, "c": -1}, {"x": 4, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": 1}, {"x": 2, "y": 3, "c": -1},
             {"x": 4, "y": 3, "c": 1},
-            {"fail": "", "success": ""},
-            {"service" : []},
+            {"playFirst": 1},
             {"description": "Now you know that diagonally connected stones can be cut by the opponent. Before being cut, you can defend yourself."}
           ],
       "1":[
             {"x": 3, "y": 2, "c": -1}, {"x": 4, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": 1}, {"x": 2, "y": 3, "c": -1},
             {"x": 4, "y": 3, "c": 1}, {"x": 5, "y": 3, "c": 1},
-            {"fail": "", "success": ""},
-            {"service" : []},
+            {"playFirst": -1},
             {"description": ""}
       ],
      "2":[
             {"x": 3, "y": 2, "c": -1}, {"x": 4, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": 1}, {"x": 2, "y": 3, "c": -1},
             {"x": 4, "y": 3, "c": 1}, {"x": 6, "y": 3, "c": 1},
-            {"fail": "", "success": ""},
-            {"service" : []},
+            {"playFirst": -1},
             {"description": "What you see below is a indirect connection (sometimes called a \"hanging\" connection) ."}
     ],
     "3":[
             {"x": 6, "y": 2, "c": -1}, {"x": 3, "y": 4, "c": 1}, {"x": 2, "y": 5, "c": -1}, {"x": 3, "y": 5, "c": -1},
             {"x": 4, "y": 5, "c": 1}, {"x": 4, "y": 6, "c": 1}, {"x": 5, "y": 6, "c": 1}, {"x": 4, "y": 7, "c": -1},
-            {"fail": "", "success": ""},
-            {"service" : []},
+            {"playFirst": 1},
             {"description": ""}
           ],
-
-
-
-          "Text": "Take a break",
-          "Title": "Destroy all whites",
+          "Text": "",
+          "Title": "Defending",
+          "NextLesson": "example",
+          "NextStage": "one-point-jump",
           "NumberOfSteps": 4
   }
 
