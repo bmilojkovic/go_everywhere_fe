@@ -18,16 +18,20 @@ export class CaptureComponent implements OnInit {
   currentStep: number;
   text: String;
   title: String;
+  numOfSteps;
   description: String;
   stage;
 
   isSuccessVisible = false;
   visible = false;
   message: String = '';
+  success: String;
+  fail: String;
 
   check = false;
 
-
+  nextLesson;
+  nextStage;
 
   constructor(private route: ActivatedRoute, private levelService: LevelService, private router: Router) {}
 
@@ -54,17 +58,35 @@ export class CaptureComponent implements OnInit {
     console.log(this.levels);
     this.text = this.levels['Text'];
     this.title = this.levels['Title'];
+    this.nextLesson = this.levels['NextLesson'];
+    this.nextStage = this.levels['NextStage'];
+    this.numOfSteps = this.levels['NumberOfSteps'];
     this.currentStep = 0;
     this.initBoard();
   }
 
   initBoard() {
+
     this.description = this.levels[this.currentStep][this.levels[this.currentStep].length - 1]['description'];
     this.stage = this.levels[this.currentStep][this.levels[this.currentStep].length - 2]['service'];
+    this.success = this.levels[this.currentStep][this.levels[this.currentStep].length - 3]['success'];
+    this.fail = this.levels[this.currentStep][this.levels[this.currentStep].length - 3]['fail'];
+
+    if (this.currentStep === 0) {
+      $('#backBtn').prop('disabled', true);
+
+    }
+    else {
+      $('#backBtn').prop('disabled', false);
+    }
+
+
+    //if (this.success === '') {this.success = 'Success! You are ready for NEXT step.'; }
+    //if (this.fail === '') {this.fail = 'Fail! RESET BOARD and try again.'; }
 
     for (const level in this.levels[this.currentStep]) {
       const levelTmp = Number(level);
-      if (levelTmp === this.levels[this.currentStep].length - 2) {
+      if (levelTmp === this.levels[this.currentStep].length - 3) {
         break;
       }
       const stoneObject = this.levels[this.currentStep][levelTmp];
@@ -108,8 +130,16 @@ export class CaptureComponent implements OnInit {
               if (self.stage[scen].f === 1){
                 self.visible = true;
                 self.isSuccessVisible = true;
-                $('#nextBtn').prop('disabled', false);
-                self.message = 'Success! You are ready for NEXT step.';
+                if (self.currentStep === self.numOfSteps - 1) {
+                  $('#nextBtn').prop('disabled', true);
+                  self.message = 'Success! ' + self.success + ' You are ready for NEXT LESSON.';
+
+                }
+                else {
+                  $('#nextBtn').prop('disabled', false);
+                  self.message = 'Success! ' + self.success + ' You are ready for NEXT step.';
+                }
+
                 return;
               }
             }
@@ -132,10 +162,11 @@ export class CaptureComponent implements OnInit {
               }
               console.log(deleted1);
 
-              if(self.stage[scen].f === 1) {
+              if (self.stage[scen].f === 1) {
                 self.visible = true;
                 self.isSuccessVisible = false;
-                self.message = 'Fail! RESET BOARD and try again';
+                self.message = null;
+                self.message = 'Fail! ' + self.fail + ' RESET BOARD and try again.';
                 return;
               }
               break;
@@ -143,8 +174,6 @@ export class CaptureComponent implements OnInit {
 
           }
         }
-
-
 
         for (const stone in deleted) {
           self.boardMain.removeObject(deleted[stone]);
@@ -154,10 +183,18 @@ export class CaptureComponent implements OnInit {
         if (deleted.length > 0 || (handicap && deleted.length <= 0)) {
 
           if( (handicap && deleted.length <= 0) || ((self.gameMain.getStone(deleted[0].x, deleted[0].y)) === 0)) {
-            $('#nextBtn').prop('disabled', false);
+            if(self.currentStep === self.numOfSteps - 1) {
+
+              $('#nextBtn').prop('disabled', true);
+              self.message = 'Success! ' + self.success + ' You are ready for NEXT LESSON.';
+
+            }
+            else {
+              $('#nextBtn').prop('disabled', false);
+              self.message = 'Success! ' + self.success + ' You are ready for NEXT step.';
+            }
             self.isSuccessVisible = true;
             self.visible = true;
-            self.message = 'Success! You are ready for NEXT step';
             return;
           }
         }
@@ -175,6 +212,8 @@ export class CaptureComponent implements OnInit {
     this.gameMain.firstPosition();
     this.visible = false;
     this.check = false;
+    this.fail = '';
+    this.success = '';
     this.initBoard();
   }
 
@@ -184,20 +223,25 @@ export class CaptureComponent implements OnInit {
     this.gameMain.firstPosition();
     this.visible = false;
     this.check = false;
+    this.success = '';
+    this.fail = '';
     this.initBoard();
   }
 
   previousLevel() {
-    this.currentStep--;
-    this.boardMain.removeAllObjects();
-    this.gameMain.firstPosition();
-    this.visible = false;
-    this.check = false;
-    this.initBoard();
+
+      this.currentStep--;
+      this.boardMain.removeAllObjects();
+      this.gameMain.firstPosition();
+      this.visible = false;
+      this.check = false;
+      this.fail = '';
+      this.success = '';
+      this.initBoard();
   }
 
   next() {
-    //this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': [this.nextLesson, {level: this.nextStage}]}}]);
+    this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': [this.nextLesson, {level: this.nextStage}]}}]);
   }
 
 }
