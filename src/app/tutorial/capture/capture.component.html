@@ -22,6 +22,7 @@
      }"
 >
   <strong>{{ message }}</strong>
+  <p *ngIf="isSuccessVisible" id="postBoardMessage">{{postBoardMessage}}</p>
 </div>
 <div class="col-sm-12 text-center">
   <button (click)="next()" id="nextLessonBtn" class="btn btn-success">Continue to next lesson</button>

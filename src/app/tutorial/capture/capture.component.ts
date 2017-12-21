@@ -27,6 +27,7 @@ export class CaptureComponent implements OnInit {
   message: String = '';
   success: String;
   fail: String;
+  postBoardMessage: String;
 
   check = false;
 
@@ -36,7 +37,7 @@ export class CaptureComponent implements OnInit {
   constructor(private route: ActivatedRoute, private levelService: LevelService, private router: Router) {}
 
   ngOnInit() {
-    this.levelService.initBoard(9,300);
+    this.levelService.initBoard(9, 300);
     this.route.params.subscribe(param => {
       this.update(this.route.snapshot.params['level']);
     });
@@ -71,6 +72,7 @@ export class CaptureComponent implements OnInit {
     this.stage = this.levels[this.currentStep][this.levels[this.currentStep].length - 2]['service'];
     this.success = this.levels[this.currentStep][this.levels[this.currentStep].length - 3]['success'];
     this.fail = this.levels[this.currentStep][this.levels[this.currentStep].length - 3]['fail'];
+    this.postBoardMessage = this.levels[this.currentStep][this.levels[this.currentStep].length - 4]['postBoardMessage'];
 
     if (this.currentStep === 0) {
       $('#backBtn').prop('disabled', true);
@@ -86,7 +88,7 @@ export class CaptureComponent implements OnInit {
 
     for (const level in this.levels[this.currentStep]) {
       const levelTmp = Number(level);
-      if (levelTmp === this.levels[this.currentStep].length - 3) {
+      if (levelTmp === this.levels[this.currentStep].length - 4) {
         break;
       }
       const stoneObject = this.levels[this.currentStep][levelTmp];

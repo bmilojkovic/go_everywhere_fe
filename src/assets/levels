@@ -2,6 +2,7 @@
   "50kyu":{
     "0":[
       {"x": 4, "y": 3, "c": 1}, {"x": 3, "y": 4, "c": 1}, {"x": 4, "y": 5, "c": 1}, {"x": 4, "y": 4, "c": -1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [{"x": 5, "y": 4, "c": -1, "f": 1}]},
       {"description": "Black's turn. Capture the white stone in atari."}
@@ -9,6 +10,7 @@
     "1":[
       {"x": 3, "y": 1, "c": 1}, {"x": 3, "y": 2, "c": -1}, {"x": 3, "y": 3, "c": -1}, {"x": 3, "y": 4, "c": 1},
       {"x": 2, "y": 2, "c": 1}, {"x": 2, "y": 3, "c": 1}, {"x": 4, "y": 2, "c": 1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [{"x": 4, "y": 3, "c": -1, "f": 1}]},
       {"description": "Black's turn. Two white stones are in atari. Capture them with one move!"}
@@ -16,6 +18,7 @@
     "2":[
       {"x": 3, "y": 2, "c": -1}, {"x": 3, "y": 3, "c": 1}, {"x": 3, "y": 4, "c": -1}, {"x": 3, "y": 5, "c": 1},
       {"x": 4, "y": 5, "c": -1}, {"x": 2, "y": 3, "c": -1}, {"x": 2, "y": 4, "c": 1}, {"x": 1, "y": 3, "c": -1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [{"x": 4, "y": 3, "c": -1, "f": 1}, {"x": 4, "y": 4, "c": -1, "f": 1}]},
       {"description": "Black's turn. Even if there are other stones nearby, just do the same."}
@@ -30,6 +33,7 @@
     "0":[
       {"x": 2, "y": 0, "c": 1}, {"x": 3, "y": 0, "c": -1}, {"x": 4, "y": 0, "c": -1}, {"x": 6, "y": 0, "c": -1},
       {"x": 3, "y": 1, "c": 1}, {"x": 4, "y": 1, "c": 1}, {"x": 6, "y": 1, "c": -1},
+      {"postBoardMessage": "Stones stuck at the edges are almost surrounded. - and therefore easier to get rid of."},
       {"fail": "White is all connected.", "success": ""},
       {"service" : [{"x": 5, "y": 0, "c": -1, "f": 1}]},
       {"description": "Black's turn. At the edge of the board, the situation is a little different. Stones stuck at the edges are almost surrounded. - and therefore easier to get rid of. "}
@@ -37,6 +41,7 @@
     "1":[
       {"x": 6, "y": 0, "c": 1}, {"x": 7, "y": 0, "c": 1}, {"x": 8, "y": 0, "c": -1}, {"x": 6, "y": 1, "c": 1},
       {"x": 6, "y": 2, "c": 1}, {"x": 7, "y": 2, "c": -1}, {"x": 8, "y": 2, "c": -1}, {"x": 7, "y": 3, "c": -1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [{"x": 8, "y": 1, "c": -1, "f": 1}]},
       {"description": "A stone in the corner is in Atari."}
@@ -45,6 +50,7 @@
       {"x": 3, "y": 2, "c": 1}, {"x": 2, "y": 3, "c": 1}, {"x": 3, "y": 3, "c": -1}, {"x": 5, "y": 3, "c": -1},
       {"x": 2, "y": 4, "c": 1}, {"x": 3, "y": 4, "c": -1}, {"x": 4, "y": 4, "c": 1}, {"x": 3, "y": 5, "c": 1},
       {"x": 3, "y": 6, "c": -1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [{"x": 4, "y": 3, "c": -1, "f": 1}]},
       {"description": "Now, two white stones are in Atari."}
@@ -60,6 +66,7 @@
       {"x": 3, "y": 2, "c": 1}, {"x": 2, "y": 3, "c": 1}, {"x": 2, "y": 4, "c": 1}, {"x": 2, "y": 5, "c": 1},
       {"x": 4, "y": 5, "c": 1},{"x": 3, "y": 6, "c": 1},{"x": 3, "y": 3, "c": -1},
       {"x": 3, "y": 4, "c": -1},{"x": 3, "y": 5, "c": -1},{"x": 5, "y": 3, "c": -1},{"x": 5, "y": 5, "c": -1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [{"x": 4, "y": 3, "c": -1, "f": 1}, {"x": 4, "y": 4, "c": -1, "f": -1}, {"x": 4, "y": 2, "c": -1, "f": 1}]},
       {"description": "Get rid of the three white stones! It takes two moves to do that. However, the first move is important."}
@@ -67,6 +74,7 @@
     "1":[
       {"x": 1, "y": 4, "c": 1}, {"x": 0, "y": 5, "c": 1}, {"x": 0, "y": 3, "c": -1}, {"x": 0, "y": 4, "c": -1},
       {"x": 2, "y": 0, "c": -1}, {"x": 2, "y": 1, "c": -1}, {"x": 2, "y": 2, "c": -1},{"x": 2, "y": 3, "c": -1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [
         {"x": 1, "y": 3, "c": -1, "f": 1}, {"x": 0, "y": 2, "c": -1, "f": -1}, {"x": 1, "y": 2, "c": -1, "f": 1},
@@ -84,6 +92,7 @@
       {"x": 5, "y": 4, "c": -1},{"x": 6, "y": 4, "c": -1},{"x": 7, "y": 4, "c": -1},
       {"x": 2, "y": 5, "c": -1},{"x": 4, "y": 5, "c": -1},{"x": 5, "y": 5, "c": 1},{"x": 6, "y": 5, "c": 1},
       {"x": 5, "y": 6, "c": -1},{"x": 6, "y": 6, "c": 1},{"x": 5, "y": 7, "c": -1},{"x": 6, "y": 7, "c": 1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [{"x": 3, "y": 5, "c": -1, "f": 1}, {"x": 3, "y": 6, "c": -1, "f": 1}]},
       {"description": "So many stones! Just be careful which stones are in Atari. If you make a wrong move, your stones will be killed instead."}
@@ -100,6 +109,7 @@
       {"x": 4, "y": 1, "c": 1}, {"x": 5, "y": 1, "c": -1}, {"x": 2, "y": 2, "c": 1},
       {"x": 3, "y": 2, "c": 1}, {"x": 4, "y": 2, "c": -1}, {"x": 2, "y": 3, "c": 1},
       {"x": 3, "y": 3, "c": -1}, {"x": 1, "y": 4, "c": -1}, {"x": 2, "y": 4, "c": -1},
+      {"postBoardMessage": "White had too many weak points to shut black into the upper left corner."},
       {"fail": "", "success": ""},
       {"service" : [{"x": 4, "y": 3, "c": -1, "f": 1}, {"x": 5, "y": 2, "c": -1, "f": -1}, {"x": 3, "y": 4, "c": -1, "f": 1}]},
       {"description": "In certain positions, black can make two simultaneous Ataris for white. Because white can't save both, black can get at least one white stone. This is called Double Ataris."}
@@ -109,6 +119,7 @@
       {"x": 4, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": 1}, {"x": 1, "y": 3, "c": 1}, {"x": 2, "y": 3, "c": -1},
       {"x": 5, "y": 3, "c": -1}, {"x": 1, "y": 4, "c": 1}, {"x": 2, "y": 4, "c": -1}, {"x": 4, "y": 4, "c": -1},
       {"x": 2, "y": 5, "c": 1}, {"x": 3, "y": 5, "c": -1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [{"x": 3, "y": 3, "c": -1, "f": 1}, {"x": 3, "y": 4, "c": -1, "f": -1}, {"x": 4, "y": 3, "c": -1, "f": 1}]},
       {"description": "Where can you make double Ataris?"}
@@ -127,6 +138,7 @@
       {"x": 5, "y": 2, "c": -1}, {"x": 6, "y": 2, "c": -1}, {"x": 2, "y": 3, "c": 1},
       {"x": 3, "y": 3, "c": -1}, {"x": 4, "y": 3, "c": -1}, {"x": 5, "y": 3, "c": 1},
       {"x": 3, "y": 4, "c": 1}, {"x": 4, "y": 4  , "c": 1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [{"x": 4, "y": 2, "c": -1, "f": 1}]},
       {"description": "Black's turn. At first glance, it seems it's an illegal move..."}
@@ -137,6 +149,7 @@
       {"x": 4, "y": 1, "c": 1}, {"x": 0, "y": 2, "c": 1}, {"x": 1, "y": 2, "c": 1}, {"x": 2, "y": 2, "c": 1},
       {"x": 3, "y": 2, "c": 1},{"x": 4, "y": 2, "c": -1},
       {"x": 0, "y": 3, "c": -1}, {"x": 2, "y": 3, "c": -1}, {"x": 3, "y": 3, "c": -1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [{"x": 1, "y": 3, "c": -1, "f": 1}, {"x": 1, "y": 4, "c": -1, "f": 1}]},
       {"description": "4 black stones are in danger! Kill the white stones before being killed!"}
@@ -145,6 +158,7 @@
       {"x": 4, "y": 1, "c": -1}, {"x": 3, "y": 2, "c": -1}, {"x": 1, "y": 3, "c": -1}, {"x": 5, "y": 3, "c": 1},
       {"x": 2, "y": 4, "c": 1}, {"x": 3, "y": 4, "c": -1}, {"x": 4, "y": 4, "c": -1}, {"x": 5, "y": 4, "c": 1},
       {"x": 3, "y": 5, "c": 1}, {"x": 4, "y": 5, "c": 1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [{"x": 3, "y": 3, "c": -1, "f": 1}, {"x": 4, "y": 3, "c": -1, "f": -1}, {"x": 4, "y": 2, "c": -1, "f": 1}]},
       {"description": "Capture the 2 white stones touching the black ones. Here, you can't capture white with one move."}
@@ -153,6 +167,7 @@
       {"x": 1, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": -1}, {"x": 2, "y": 3, "c": 1}, {"x": 2, "y": 4, "c": 1},
       {"x": 3, "y": 4, "c": -1}, {"x": 2, "y": 5, "c": -1}, {"x": 3, "y": 5, "c": 1}, {"x": 4, "y": 5, "c": 1},
       {"x": 2, "y": 6, "c": -1}, {"x": 4, "y": 6, "c": -1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": ""},
       {"service" : [
         {"x": 4, "y": 3, "c": -1, "f": 1}, {"x": 3, "y": 3, "c": -1, "f": -1}, {"x": 3, "y": 2, "c": -1, "f": 1},
@@ -172,6 +187,7 @@
       {"x": 1, "y": 5, "c": 1}, {"x": 2, "y": 5, "c": -1}, {"x": 3, "y": 5, "c": -1},
       {"x": 1, "y": 6, "c": 1}, {"x": 2, "y": 6, "c": 1}, {"x": 3, "y": 6, "c": -1},
       {"x": 6, "y": 6, "c": 1}, {"x": 1, "y": 7, "c": 1}, {"x": 2, "y": 7, "c": -1},
+      {"postBoardMessage": "Black has become secure by having enough spaces (or, eyes) where white won't play."},
       {"fail": "", "success": ""},
       {"service" : [
         {"x": 3, "y": 7, "c": -1, "f": 1}, {"x": 4, "y": 7, "c": -1, "f": -1}, {"x": 3, "y": 8, "c": -1, "f": 1},
@@ -186,13 +202,14 @@
       {"x": 2, "y": 6, "c": 1}, {"x": 3, "y": 6, "c": -1}, {"x": 4, "y": 6, "c": -1}, {"x": 5, "y": 6, "c": -1},
       {"x": 2, "y": 7, "c": 1}, {"x": 3, "y": 7, "c": -1}, {"x": 4, "y": 7, "c": 1}, {"x": 5, "y": 7, "c": 1},
       {"x": 6, "y": 7, "c": -1}, {"x": 3, "y": 8, "c": 1},
+      {"postBoardMessage": "If you tried scenario when you play F1 move first you see that if white can capture two black stones on the bottom side, she can live easily. Your stones were in Atari. So you escaped. At the next moment, your entire stones disappeared! This tragedy is called \"Oiotoshi\". You should have escaped *before* you were in Atari. "},
       {"fail": "", "success": ""},
       {"service" : [
         {"x": 4, "y": 8, "c": 1, "f": 1},
         {"x": 5, "y": 8, "c": -1, "f": -1}, {"x": 6, "y": 8, "c": -1, "f": -1}, {"x": 4, "y": 8, "c": -1, "f": 1},
         {"x": 2, "y": 8, "c": -1, "f": 1}
       ]},
-      {"description": "Black is blocking white on the bottom right area. White doesn't yet have 2 eyes.Then white played G2. Look what happens if black answers at F1 ( or G1) before you find the right answer."}
+      {"description": "Black is blocking white on the bottom right area. White doesn't yet have 2 eyes. Then white played G2. Look what happens if black answers at F1 ( or G1) before you find the right answer."}
     ],
     "Text": " ",
     "Title": "36 Kyu Problems",
@@ -206,6 +223,7 @@
       {"x": 4, "y": 3, "c": -1}, {"x": 3, "y": 4, "c": 1}, {"x": 4, "y": 4, "c": -1},
       {"x": 2, "y": 5, "c": 1}, {"x": 3, "y": 5, "c": -1}, {"x": 2, "y": 6, "c": 1},
       {"x": 3, "y": 6, "c": -1},
+      {"postBoardMessage": "This shows that it is possible to cut stones that are diagonally connected. If stones are cut into two parts, each has to live separately - you will have a hard time."},
       {"fail": "White is completely connected.", "success": "White was torn apart."},
       {"service" : [{"x": 4, "y": 5, "c": -1, "f": 1}, {"x": 4, "y": 6, "c": -1, "f": -1}, {"x": 5, "y": 5, "c": -1, "f": 1}]},
       {"description": "It looks as if white has the larger territory. However, her wall has a weak point. Just \"cut\" white's wall."}
@@ -216,6 +234,7 @@
       {"x": 2, "y": 4, "c": 1}, {"x": 3, "y": 4, "c": 1}, {"x": 4, "y": 4, "c": 1}, {"x": 5, "y": 4, "c": 1},
       {"x": 6, "y": 4, "c": -1}, {"x": 7, "y": 4, "c": -1}, {"x": 8, "y": 4, "c": -1}, {"x": 2, "y": 5, "c": -1},
       {"x": 3, "y": 5, "c": -1}, {"x": 4, "y": 5, "c": -1}, {"x": 5, "y": 5, "c": -1}, {"x": 6, "y": 5, "c": -1},
+      {"postBoardMessage": "White could not save the two stones."},
       {"fail": "", "success": "You win the game."},
       {"service" : [
         {"x": 1, "y": 5, "c": -1, "f": 1}, {"x": 1, "y": 6, "c": -1, "f": -1}, {"x": 0, "y": 5, "c": -1, "f": 1},
@@ -232,13 +251,15 @@
   "34kyu":{
     "0":[
       {"x": 3, "y": 4, "c": 1}, {"x": 2, "y": 5, "c": -1}, {"x": 4, "y": 5, "c": -1}, {"x": 3, "y": 6, "c": 1},
+      {"postBoardMessage": ""},
       {"fail": "White connected.", "success": "Black connected. You prevented the cut."},
       {"service" : [{"x": 3, "y": 5, "c": -1, "f": 1}]},
-      {"description": " "}
+      {"description": "Always try to connect your stones to each other. That's because the larger your goup of stones becomes, the harder it is to surround it."}
     ],
     "1":[
       {"x": 4, "y": 5, "c": -1}, {"x": 2, "y": 6, "c": 1}, {"x": 3, "y": 6, "c": 1}, {"x": 4, "y": 6, "c": -1},
       {"x": 5, "y": 6, "c": 1},
+      {"postBoardMessage": ""},
       {"fail": "Black was torn.", "success": "Black connected. You prevented the cut."},
       {"service" : [{"x": 4, "y": 7, "c": -1, "f": 1}]},
       {"description": "White just played E3. How do you respond?"}
@@ -246,9 +267,10 @@
     "2":[
       {"x": 4, "y": 5, "c": -1}, {"x": 2, "y": 6, "c": 1}, {"x": 3, "y": 6, "c": 1}, {"x": 4, "y": 6, "c": -1},
       {"x": 5, "y": 6, "c": 1}, {"x": 4, "y": 7, "c": 1}, {"x": 5, "y": 7, "c": -1},
+      {"postBoardMessage": ""},
       {"fail": "", "success": "You've got F2. You prevented the cut."},
       {"service" : [{"x": 6, "y": 7, "c": 1, "f": 1}, {"x": 3, "y": 7, "c": -1, "f": 1}, {"x": 6, "y": 6, "c": -1, "f": 1}]},
-      {"description": "Continuing from the above...   White cut you by playing F2. This is a reckless move. But how do you punish it?"}
+      {"description": "Continuing from the before ...   White cut you by playing F2. This is a reckless move. But how do you punish it?"}
     ],
     "Text": "Use your instinct!",
     "Title": "34 Kyu Problems",
@@ -262,6 +284,7 @@
       {"x": 4, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": -1}, {"x": 1, "y": 3, "c": 1}, {"x": 3, "y": 3, "c": 1},
       {"x": 6, "y": 3, "c": -1}, {"x": 4, "y": 4, "c": 1}, {"x": 6, "y": 4, "c": -1}, {"x": 2, "y": 6, "c": 1},
       {"x": 4, "y": 6, "c": 1}, {"x": 6, "y": 6, "c": -1}, {"x": 6, "y": 7, "c": -1},
+      {"postBoardMessage": ""},
       {"fail": "You lost the bottom area.", "success": "Black got some territory on the bottom."},
       {"service" : [{"x": 5, "y": 7, "c": 1, "f": 1} ,{"x": 4, "y": 7, "c": -1, "f": 1}, {"x": 5, "y": 7, "c": -1, "f": 1}]},
       {"description": "Black occupies left side and white controls the right. However, there are still a few places where the border is not clear. Where is the point that you can get the most profit?"}
@@ -273,7 +296,8 @@
       {"x": 4, "y": 3, "c": 1}, {"x": 5, "y": 3, "c": -1}, {"x": 3, "y": 4, "c": 1}, {"x": 4, "y": 4, "c": -1},
       {"x": 6, "y": 4, "c": -1}, {"x": 3, "y": 5, "c": 1}, {"x": 4, "y": 5, "c": -1}, {"x": 3, "y": 6, "c": 1},
       {"x": 4, "y": 6, "c": -1}, {"x": 3, "y": 7, "c": 1}, {"x": 4, "y": 7, "c": -1}, {"x": 3, "y": 8, "c": -1},
-       {"fail": "", "success": "You prevented the cut."},
+      {"postBoardMessage": ""},
+      {"fail": "", "success": "You prevented the cut."},
       {"service" : [
         {"x": 2, "y": 8, "c": -1, "f": 1}, {"x": 4, "y": 8, "c": -1, "f": -1},
         {"x": 2, "y": 7, "c": 1, "f": 1}, {"x": 1, "y": 7, "c": 1, "f": 1}, {"x": 2, "y": 6, "c": 1, "f": 1},
@@ -308,7 +332,7 @@
       {"x": 5, "y": 5, "c": 1}, {"x": 6, "y": 5, "c": -1}, {"x": 5, "y": 6, "c": -1},
       {"fail": "", "success": ""},
       {"service" : [{"x": 4, "y": 5, "c": 1, "f": 1}, {"x": 5, "y": 4, "c": 1, "f": 1}, {"x": 4, "y": 5, "c": -1, "f": 1}]},
-      {"description": "Now practice. Extend your stone after touching and being slapped. There are two right answers. Find both of them!"}
+      {"description": "Now practice. Extend your stone after touching and being slapped. There are two right answers. Find both of them! Please remember that an extension move can protect your stones."}
     ],
 
     "Text": "",
@@ -340,25 +364,25 @@
             {"x": 3, "y": 2, "c": -1}, {"x": 4, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": 1}, {"x": 2, "y": 3, "c": -1},
             {"x": 4, "y": 3, "c": 1},
             {"playFirst": 1},
-            {"description": "Now you know that diagonally connected stones can be cut by the opponent. Before being cut, you can defend yourself."}
+            {"description": "Now you know that diagonally connected stones can be cut by the opponent. Before being cut, you can defend yourself.Here, if white plays a cut at F6, black's two stones are badly separated. So, black should play a defending move to prevent the cut. This is a connection move."}
           ],
       "1":[
             {"x": 3, "y": 2, "c": -1}, {"x": 4, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": 1}, {"x": 2, "y": 3, "c": -1},
             {"x": 4, "y": 3, "c": 1}, {"x": 5, "y": 3, "c": 1},
             {"playFirst": -1},
-            {"description": ""}
+            {"description": "Here, with F6, black firmly connects the stones. This is a direct connection. There is no more possibility of white separating the stones."}
       ],
      "2":[
             {"x": 3, "y": 2, "c": -1}, {"x": 4, "y": 2, "c": -1}, {"x": 5, "y": 2, "c": 1}, {"x": 2, "y": 3, "c": -1},
             {"x": 4, "y": 3, "c": 1}, {"x": 6, "y": 3, "c": 1},
             {"playFirst": -1},
-            {"description": "What you see below is a indirect connection (sometimes called a \"hanging\" connection) ."}
+            {"description": "What you see below is a indirect connection (sometimes called a \"hanging\" connection). White can legally play at F6, however, it will soon be captured by F5. Please make sure by playing on the board by yourself. Thus, they are virtually connected. These kind of indirect connection may seem a little smarter than the direct connections. If you know when to play an indirect connection at the right place, you are no longer a beginner."}
     ],
     "3":[
             {"x": 6, "y": 2, "c": -1}, {"x": 3, "y": 4, "c": 1}, {"x": 2, "y": 5, "c": -1}, {"x": 3, "y": 5, "c": -1},
             {"x": 4, "y": 5, "c": 1}, {"x": 4, "y": 6, "c": 1}, {"x": 5, "y": 6, "c": 1}, {"x": 4, "y": 7, "c": -1},
             {"playFirst": 1},
-            {"description": ""}
+            {"description": "In the figure down, black has two cutting points at E5 and F4. You might think either of them will be cut... There is a good move which defends the two weak points simultaneously! Please make a move at F5. Now white can play neither E5 nor F4. That's because F5 happens to be the indirect connection for both of them. Because of the shape, this connection is called trumpet connection."}
           ],
           "Text": "",
           "Title": "Defending",
