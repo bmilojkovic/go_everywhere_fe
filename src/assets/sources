@@ -122,8 +122,8 @@
       "PostTextTitle": "",
       "Title": "Kakari and Shimari - corners are profitable",
       "Subtitle": "",
-      "NextLesson": "capture",
-      "NextStage": "35kyu"
+      "NextLesson": "introduction",
+      "NextStage": "introduction"
     },
     "komi":{
       "p1": "In normal games, black always plays the first move. Thus, black has a slight advantage against white!",
