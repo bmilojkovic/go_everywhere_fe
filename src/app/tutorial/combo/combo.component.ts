@@ -125,7 +125,7 @@ export class ComboComponent implements OnInit {
                 self.visible = true;
                 self.isSuccessVisible = true;
                 $('#nextBtn').prop('disabled', false);
-                self.message = 'Success! You are ready for NEXT step.';
+                self.message = 'Success! You are ready for NEXT LESSON.';
                 return;
               }
             }
@@ -170,7 +170,7 @@ export class ComboComponent implements OnInit {
             $('#nextBtn').prop('disabled', false);
             self.isSuccessVisible = true;
             self.visible = true;
-            self.message = 'Success! You are ready for NEXT step';
+            self.message = 'Success! You are ready for NEXT LESSON.';
             return;
           }
         }

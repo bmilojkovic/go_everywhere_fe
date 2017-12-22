@@ -129,7 +129,7 @@ export class CaptureComponent implements OnInit {
             };
 
             if ( self.stage[scen].c === 1 && self.gameMain.getStone(stoneObject.x, stoneObject.y) === WGo.B && self.check === false){
-              if (self.stage[scen].f === 1){
+              if (self.stage[scen].f === 1) {
                 self.visible = true;
                 self.isSuccessVisible = true;
                 if (self.currentStep === self.numOfSteps - 1) {
