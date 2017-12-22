@@ -42,12 +42,12 @@ export class ComboComponent implements OnInit {
   ngOnInit() {
     this.levelService.initBoard(9, 300 );
     this.route.params.subscribe(param => {
-      this.update(this.route.snapshot.params['example'], this.route.snapshot.params['capture']);
+      this.update(this.route.snapshot.params['level'], this.route.snapshot.params['capture']);
     });
-    this.update(this.route.snapshot.params['example'], this.route.snapshot.params['capture']);
+    this.update(this.route.snapshot.params['level'], this.route.snapshot.params['capture']);
   }
 
-  update(stage: any, level: any) {
+  update(level: any, capture: any) {
     this.content = this.loaderService.pageContent[level];
     this.title = this.content['Title'];
     this.text = this.content['Text'];
@@ -73,7 +73,7 @@ export class ComboComponent implements OnInit {
     this.check = false;
     this.gameMain.firstPosition();
     this.boardMain.removeAllObjects();
-    this.levels = this.levelService.jsonLevels[stage];
+    this.levels = this.levelService.jsonLevels[capture];
     this.currentStep = 0;
     this.initBoard();
   }
@@ -190,7 +190,7 @@ export class ComboComponent implements OnInit {
 
   next() {
     this.router.navigate(['/tutorial', {
-      outlets: {'tutorialOutlet': [this.nextLesson, {example: this.nextStage, capture: this.nextLevel}]}}]);
+      outlets: {'tutorialOutlet': [this.nextLesson, {level: this.nextLevel, capture: this.nextStage}]}}]);
   }
 
 }

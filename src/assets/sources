@@ -110,8 +110,44 @@
     "PostTextTitle": "",
     "Title": "Extending your stone",
     "Subtitle": "",
-    "NextLesson": "capture",
-    "NextStage": "35kyu"
-  }
+    "NextLesson": "example",
+    "NextStage": "",
+    "NextLevel": "kakari-shimari"
+  },
+  "kakari-shimari":{
+      "0": {"ImageUrl": "assets/tutorial-images/", "ImageDescription": "You can see how real games are started on the 13x13 board on the left. Click Next button repeatedly. You can step backwards with Back button. First, each side played a position near two corners. The first move by black is called 3-3 point ( or san-san) because it is located on the third line of vertical and horizontal lines counting from the closest corner. This move guarantees a position that can obtain the corner. On the next play, white also played on 3-3 point. The next move by black is called the 4-4 point ( or hoshi) where it is marked with a small black circle. This point can surround a larger corner than a play on the 3-3 point. However, it can be invaded more easily because it has more spaces between it and the edge of the board. The fourth move by white is also a popular one. Of course, you can play anywhere on the board if it is not illegal. Usually, a game proceeds from the corners to sides and eventually to the middle. Though corners are the best places to get territory, no one would make a move at as M2 or N1 because that would be too small."},
+      "1": {"ImageUrl": "assets/tutorial-images/", "ImageDescription": "Continuing from the above... On the fifth move, black reinforced his lower left corner by playing on F3. These kind of strengthening moves are called Shimari( or 'enclosure' moves). On the next move, white also strengthened her lower right corner with a different kind of shimari. Next, black put a stone near a white stone.(J10) This move implies that if white ignores it, black will invade the corner by playing somewhere like L11. This kind of approach move is called Kakari(attacking, or aiming). Then white \"touched\" the black stone by playing J11 to strike back. After that, each side strengthened themselves.(K11,G10) White thought that it was looking as if the left side of the board would be black's territory. Thus she invaded in the left side by herself to prevent that! These moves are called Uchikomi (smashing, striking, or invading) - By the way, you don't have to remember these Japanese words right now. This is one of example showing how games are started."},
+      "Text": "You will learn how to play in the beginning - especially, the negotiation around the corners.",
+      "PostText": "Keep in mind that Go is a sharing game - you can't get everything. You have to yield, you have to sacrifice, you have to apologize if you were too greedy. If you were too aggressive, you will lose everything, literally!",
+      "PostTextTitle": "",
+      "Title": "Kakari and Shimari - corners are profitable",
+      "Subtitle": "",
+      "NextLesson": "capture",
+      "NextStage": "35kyu"
+    },
+    "komi":{
+      "p1": "In normal games, black always plays the first move. Thus, black has a slight advantage against white!",
+      "p2": "The amount of Komi is changing over time. When it was introduced in Japanese Professional games, it was 4.5 points. However, black still had better chance to win, so Komi was increased to 5.5 points in 1974. In 2002, the Japanese Go Association again increased the Komi value to 6.5. With this Komi system, Go has almost no drawn games and has become more exciting and fairer.",
+      "li1": "This bonus is usually 6.5 points. That means the value of the first move is considered to be about 6 and a half points. The additional half point is introduced to prevent draw.",
+      "li2": "For example, if black has 7 points more territories than white, black wins by 0.5 point. If black has 6 more points than white, white wins by 0.5 point",
+      "li3": "In the old days of Go, there was no Komi system. As more people become aware of the black's advantage, Komi was introduced.",
+      "Title": "Komi",
+      "Subtitle": "To compensate this unfairness, white is sometimes given bonus points, called Komi, when counting territories in the end. ",
+      "Subtitle2": "",
+      "NextLesson": "handicap",
+      "NextStage": "handicap"
+    },
+    "introduction":{
+      "p1": "This is easy, interactive GO tutorial. When you finish this tutorial you will have basic knowledge for playing Go game. Enjoy !",
+      "p2": "In the amateur Go world, 30 kyu is usually the lowest rank. The smaller the kyu, the stronger the player. Above 1 kyu comes 1 dan. As the dan number increases, it gets stronger. Dan players are considered to play very well.",
+      "li1": "Two players (black and white) take turns, placing one stone on the board at a time.",
+      "li2": "A stone must be placed on the intersection of the vertical and horizontal lines.",
+      "li3": "Once a stone is placed, you can't move it, although under some conditions it may be removed.",
+      "Title": "Introduction",
+      "Subtitle": "Before you begin, please remember just 3 rules below.",
+      "Subtitle2": "About the ranking system of Go",
+      "NextLesson": "example",
+      "NextStage": "capture-stones"
+    }
 
 }

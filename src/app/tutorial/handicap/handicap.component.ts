@@ -200,6 +200,6 @@ export class HandicapComponent implements OnInit {
   }
 
   next(path: any, example: any, capture: any) {
-    this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': ['combo', {example: 'SITF', capture: 'slap-in-the-face'}]}}]);
+    this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': ['combo', {level: 'slap-in-the-face', capture: 'SITF'}]}}]);
   }
 }

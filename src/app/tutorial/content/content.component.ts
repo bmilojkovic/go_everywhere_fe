@@ -18,7 +18,7 @@ export class ContentComponent implements OnInit {
   }
 
   comboChange(path: any, example: any, capture: any) {
-    this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': [path, {example: example, capture: capture}]}}]);
+    this.router.navigate(['/tutorial', {outlets: {'tutorialOutlet': [path, {level: example, capture: capture}]}}]);
   }
 
   toggle(event: any) {
