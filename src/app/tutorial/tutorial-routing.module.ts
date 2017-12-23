@@ -12,10 +12,11 @@ import {DestroyComponent} from './capture/destroy.component';
 import {DefendingComponent} from './defending/defending.component';
 import {HandicapComponent} from './handicap/handicap.component';
 import {ComboComponent} from './combo/combo.component';
+import {BasicComponent} from './introduction/basic.component';
 
 const routes: Routes = Route.withShell([
   { path: 'tutorial', component: TutorialComponent, data: { title: extract('Tutorial') }, children: [
-    {path: '', component: IntroductionComponent, pathMatch: 'full', outlet: 'tutorialOutlet'},
+    {path: '', component: BasicComponent, pathMatch: 'full', outlet: 'tutorialOutlet'},
     {path: 'introduction', component: IntroductionComponent, outlet: 'tutorialOutlet'},
     {path: 'example', component: ExampleComponent, outlet: 'tutorialOutlet'},
     {path: 'replay', component: ReplayComponent, outlet: 'tutorialOutlet'},

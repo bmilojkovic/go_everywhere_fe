@@ -19,6 +19,7 @@ import {DestroyComponent} from './capture/destroy.component';
 import {DefendingComponent} from './defending/defending.component';
 import {HandicapComponent} from './handicap/handicap.component';
 import {ComboComponent} from './combo/combo.component';
+import {BasicComponent} from './introduction/basic.component';
 
 const appRoutes: Routes = [
   {path: '', component: IntroductionComponent, pathMatch: 'full'},
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
   ],
   exports: [],
   declarations: [TutorialComponent, ContentComponent, IntroductionComponent,
-    ExampleComponent, ReplayComponent, CaptureComponent, DestroyComponent, DefendingComponent, HandicapComponent, ComboComponent],
+    ExampleComponent, ReplayComponent, CaptureComponent, DestroyComponent, DefendingComponent,
+    HandicapComponent, ComboComponent, BasicComponent],
   providers: [LoaderService, LevelService]
 })
 export class TutorialModule { }
