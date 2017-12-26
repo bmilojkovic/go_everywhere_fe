@@ -44,7 +44,6 @@ export class ComboComponent implements OnInit {
     this.route.params.subscribe(param => {
       this.update(this.route.snapshot.params['level'], this.route.snapshot.params['capture']);
     });
-    this.update(this.route.snapshot.params['level'], this.route.snapshot.params['capture']);
   }
 
   update(level: any, capture: any) {

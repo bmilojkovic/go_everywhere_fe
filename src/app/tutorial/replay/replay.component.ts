@@ -17,7 +17,6 @@ export class ReplayComponent implements OnInit {
     this.route.params.subscribe(param => {
       this.update('assets/tutorial-games/game.sgf');
     });
-    this.update('assets/tutorial-games/game.sgf');
 
   }
 

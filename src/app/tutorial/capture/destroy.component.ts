@@ -35,7 +35,6 @@ export class DestroyComponent implements OnInit {
     this.route.params.subscribe(param => {
       this.update(this.route.snapshot.params['level']);
     });
-    this.update(this.route.snapshot.params['level']);
   }
 
   update(stage: any) {
