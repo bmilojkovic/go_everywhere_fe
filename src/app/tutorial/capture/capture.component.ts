@@ -63,6 +63,7 @@ export class CaptureComponent implements OnInit {
     this.numOfSteps = this.levels['NumberOfSteps'];
     this.currentStep = 0;
     this.initBoard();
+    $('#mainWindow').animate({ scrollTop: 0 }, 500);
   }
 
   initBoard() {

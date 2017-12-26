@@ -75,6 +75,7 @@ export class ComboComponent implements OnInit {
     this.levels = this.levelService.jsonLevels[capture];
     this.currentStep = 0;
     this.initBoard();
+    $('#mainWindow').animate({ scrollTop: 0 }, 500);
   }
 
   initBoard() {

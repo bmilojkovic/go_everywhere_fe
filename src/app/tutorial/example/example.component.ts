@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {LoaderService} from '../loader.service';
+declare const $: any;
 
 @Component({
   selector: 'app-example',
@@ -43,6 +44,7 @@ export class ExampleComponent implements OnInit {
           'description': this.content[x]['ImageDescription'] });
       }
     }
+    $('#mainWindow').animate({ scrollTop: 0 }, 500);
   }
 
   next() {

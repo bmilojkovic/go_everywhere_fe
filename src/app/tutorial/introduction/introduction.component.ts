@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {LoaderService} from '../loader.service';
+declare var $: any;
 
 @Component({
   selector: 'app-introduction',
@@ -44,6 +45,7 @@ export class IntroductionComponent implements OnInit {
     this.li3 = this.content['li3'];
     this.nextLesson = this.content['NextLesson'];
     this.nextStage = this.content['NextStage'];
+    $('#mainWindow').animate({ scrollTop: 0 }, 500);
   }
 
   next() {

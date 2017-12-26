@@ -50,6 +50,7 @@ export class HandicapComponent implements OnInit {
     this.nextStage = this.levels['NextStage'];
     this.numOfSteps = this.levels['NumberOfSteps'];
     this.initBoard();
+    $('#mainWindow').animate({ scrollTop: 0 }, 500);
   }
 
   initBoard() {

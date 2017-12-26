@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {LoaderService} from '../loader.service';
+declare var $: any;
 
 @Component({
   selector: 'app-replay',
@@ -22,6 +23,7 @@ export class ReplayComponent implements OnInit {
 
   update(level: String) {
     this.gameDataURL = level;
+    $('#mainWindow').animate({ scrollTop: 0 }, 500);
   }
 
 }

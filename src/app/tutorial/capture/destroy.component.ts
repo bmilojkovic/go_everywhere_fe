@@ -52,6 +52,7 @@ export class DestroyComponent implements OnInit {
     this.nextStage = this.levels['NextStage'];
     this.currentStep = 0;
     this.initBoard();
+    $('#mainWindow').animate({ scrollTop: 0 }, 500);
   }
 
   initBoard() {
